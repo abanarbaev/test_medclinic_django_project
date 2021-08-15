@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Клиника MediCare</title>    
+    <!-- Последний скомпилированный и минимизированный Bootstrap CSS 4.6.0 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+<body>
+
+    <!-- header start-->  
+    
+    <header class="header">
+    
+    <div class="wrapper">
+      <div class="header-logo">
+        <a href="/" class="header-logo__link">
+          <img src="/dj001/blog/static/img/svg/logo_main.svg" alt="Клиника MediCare" class="header-logo__link-pic">
+        </a>
+      </div>
+      
+      <div class="header-wrapper">
+        <div class="header-wrapper__info">
+          <ul class="header-wrapper__info-list">
+            <li class="header-wrapper__info-item">
+              <a href="#!" class="header-wrapper__info-link">
+                <img src="/dj001/img/svg/logo_adress.svg" alt="Комендантский пр-кт, д.58, к1, стр.1" class="header-wrapper__info-item-pic">
+              </a> 
+              <a href="#!" class="header-wrapper__info-link">Комендантский пр-кт, д.58, к1, стр.1</a>
+            </li>
+            <li class="header-wrapper__info-item">
+              <a href="#!" class="header-wrapper__info-link">
+                <img src="/dj001/img/svg/logo_work_hour.svg" alt="Пн-Вс 09:00-20:00" class="header-wrapper__info-item-pic">
+              </a>
+              <a href="#!" class="header-wrapper__info-link">Пн-Вс 09:00-20:00</a>
+            </li>
+            <li class="header-wrapper__info-item">
+              <a href="#!" class="header-wrapper__info-link">
+                <img src="/dj001/img/svg/logo_tel.svg" alt="+78129945800" class="header-wrapper__info-item-pic">
+              </a>
+              <a href="#!" class="header-wrapper__info-link">+7 812 994 58 00</a>
+            </li>             
+          </ul>
+        </div>
+
+        <div class="header-wrapper__info">
+          <ul class="header-wrapper__info-list">
+            <li class="header-wrapper__info-item">
+              <a href="#!" class="header-wrapper__info-link">
+                <img src="/dj001/img/svg/logo_wa.svg" alt="WhatsApp MediCare Clinic" class="header-wrapper__info-item-pic">
+              </a>
+            </li>
+            <li class="header-wrapper__info-item">
+              <a href="#!" class="header-wrapper__info-link">
+                <img src="/dj001/img/svg/logo_inst.svg" alt="Instagram MediCare Clinic" class="header-wrapper__info-item-pic">
+              </a>
+            </li>
+            <li class="header-wrapper__info-item">
+              <a href="#!" class="header-wrapper__info-link">
+                <img src="/dj001/img/svg/logo_vk.svg" alt="VKontakte MediCare Clinic" class="header-wrapper__info-item-pic">
+              </a>
+            </li>
+            <li class="header-wrapper__info-item">
+              <a href="#!" class="header-wrapper__info-link">
+                <img src="/dj001/img/svg/logo_tm.svg" alt="Telegram MediCare Clinic" class="header-wrapper__info-item-pic">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="header-wrapper__info">
+          <ul class="header-wrapper__info-list">
+            <li class="header-wrapper__info-item">
+              <a href="#!" class="header-wrapper__info-link">
+                <img src="/dj001/img/svg/user 1.svg" alt="User Account" class="header-wrapper__info-item-pic">
+              </a>
+            </li>
+            <li class="header-wrapper__info-item">
+              <a href="#!" class="header-wrapper__info-link">
+                <img src="/dj001/img/svg/search.svg" alt="Search on website" class="header-wrapper__info-item-pic">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <nav class="header-nav">
+          <ul class="header-nav-menu">
+
+            <div class="header-nav-menu_subnav">
+              <li class="header-nav-menu_subnav-item">                
+                <a class="header-nav-menu_subnav-link" data-toggle="dropdown" id="Preview" href="#!" 
+                role="button" aria-haspopup="true" aria-expanded="false">КЛИНИКА MEDICARE</a>
+                <div class="dropdown-menu" aria-labelledby="Просмотр">
+                  <a class="dropdown-item" href="#!">Услуги и Анализы</a>
+                  <a class="dropdown-item" href="#!">Программы</a>
+                  <a class="dropdown-item" href="#!">Акции</a>
+                  <a class="dropdown-item" href="#!">Врач на дом</a>
+                  <a class="dropdown-item" href="#!">Травмпункт</a>
+                  <a class="dropdown-item" href="#!">Онлайн-консультации</a>
+                  <a class="dropdown-item" href="#!">Вакансии</a>
+                </div>
+              </li>
+            </div>
+
+            <div class="header-nav-menu_subnav">
+              <li class="header-nav-menu_subnav-item">                
+                <a class="header-nav-menu_subnav-link" data-toggle="dropdown" id="Preview" href="#!" 
+                role="button" aria-haspopup="true" aria-expanded="false">О НАС</a>
+                <div class="dropdown-menu" aria-labelledby="Просмотр">
+                  <a class="dropdown-item" href="#!">Врачи</a>
+                  <a class="dropdown-item" href="#!">Нашим клиентам</a>
+                  <a class="dropdown-item" href="#!">Отзывы</a>
+                  <a class="dropdown-item" href="#!">Партнеры</a>
+                  <div class="dropdown-divider"></div>
+                  <h6 class="dropdown-header">Контакты</h6>
+                  <a class="dropdown-item" href="#!">Адрес</a>
+                  <a class="dropdown-item" href="#!">Часы работы</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#!">Документы и Лицензии</a>
+                  <a class="dropdown-item" href="#!">Вопросы и ответы</a>
+                  <a class="dropdown-item" href="#!">Цены</a>
+                  <a class="dropdown-item" href="#!">Политика конфиденциальности</a>
+                </div>
+              </li>
+            </div>
+
+            <div class="header-nav-menu_subnav">
+              <li class="header-nav-menu_subnav-item">                
+                <a class="header-nav-menu_subnav-link" data-toggle="dropdown" id="Preview" href="#!" 
+                role="button" aria-haspopup="true" aria-expanded="false">СОБЫТИЯ</a>
+                <div class="dropdown-menu" aria-labelledby="Просмотр">
+                  <a class="dropdown-item" href="#!">Мероприятия</a>
+                  <a class="dropdown-item" href="#!">Новости</a>
+                  <a class="dropdown-item" href="#!">Акции</a>
+                  <!-- 
+                  <a class="dropdown-item" href="#">Партнеры</a>
+                  <a class="dropdown-item" href="#">Контакты/Часы работы</a>
+                  <a class="dropdown-item" href="#">Документы и Лицензии</a>
+                  <a class="dropdown-item" href="#">Вопросы и ответы</a>
+                  <a class="dropdown-item" href="#">Цены</a>
+                  <a class="dropdown-item" href="#">Политика конфиденциальности</a>
+                  -->
+                </div>
+              </li>
+            </div>
+
+
+            <div class="header-nav-menu_subnav">
+              <li class="header-nav-menu_subnav-item">                
+                <a class="header-nav-menu_subnav-link" data-toggle="dropdown" id="Preview" href="#!" 
+                role="button" aria-haspopup="true" aria-expanded="false">СТАТЬИ</a>
+                <div class="dropdown-menu" aria-labelledby="Просмотр">
+                  <!-- 
+                  <a class="dropdown-item" href="#">Врачи</a>
+                  <a class="dropdown-item" href="#">Нашим клиентам</a>
+                  <a class="dropdown-item" href="#">Отзывы</a>
+                  <a class="dropdown-item" href="#">Партнеры</a>
+                  <a class="dropdown-item" href="#">Контакты/Часы работы</a>
+                  <a class="dropdown-item" href="#">Документы и Лицензии</a>
+                  <a class="dropdown-item" href="#">Вопросы и ответы</a>
+                  <a class="dropdown-item" href="#">Цены</a>
+                  <a class="dropdown-item" href="#">Политика конфиденциальности</a>
+                  -->
+                </div>
+              </li>
+            </div>
+
+          </ul>
+        </nav>
+        
+        
+      
+
+      </div>
+    </div>
+    </header>
+
+    <!-- header end-->
+
+    <!-- main start-->
+
+    <main class="main">
+
+    
+        <section class="wrapper maintext">
+            <div class="page-header">
+                <h1 class="maintext-block__title">
+                    <a href="/">MC Clinic blog</a>
+                </h1>
+            </div>
+            <div class="content container">
+                <div class="row">
+                    <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </section>    
+    
+    </main>
+
+
+    <!-- footer start  -->
+    
+    <footer class="footer wrapper-full">
+    
+    <div class="footer__addr">
+
+      <div class="footer_logo">
+        <img src="./img/svg/logo_mainw.png" alt="MediCare Clinic logo_adress" class="footer_logo-pic">
+      </div>
+      
+      <ul class="footer__addr__text">
+        +7 (812) 994-58-00
+        <br>
+        Пн-Вс 09:00 – 20:00
+        <br>
+        197373, Россия, г. Санкт-Петербург, Комендантский пр., д. 58, корп.1, стр.1
+        <br>
+      </ul>
+
+    </div>
+    
+    <ul class="footer__nav">
+
+      <li class="nav__item">
+
+        <h2 class="nav__title">MC CLINIC</h2>
+  
+        <ul class="nav__ul">
+
+          <li>
+            <a class="nav__ul__link" href="#!">Услуги и Анализы</a>
+          </li>
+  
+          <li>
+            <a class="nav__ul__link" href="#!">Программы</a>
+          </li>
+              
+          <li>
+            <a class="nav__ul__link" href="#!">Врач на дом</a>
+          </li>
+
+          <li>
+            <a class="nav__ul__link" href="#!">Травмпункт</a>
+          </li>
+
+          <li>
+            <a class="nav__ul__link" href="#!">Онлайн-консультации</a>
+          </li>
+
+          <li>
+            <a class="nav__ul__link" href="#!">Вакансии</a>
+          </li>
+
+        </ul>
+
+      </li>
+      
+      <li class="nav__item nav__item--extra">
+
+        <h2 class="nav__title">О НАС</h2>
+        
+        <ul class="nav__ul nav__ul--extra">
+
+          <li>
+            <a class="nav__ul__link" href="#!">Врачи</a>
+          </li>
+          
+          <li>
+            <a class="nav__ul__link" href="#!">Нашим клиентам</a>
+          </li>
+          
+          <li>
+            <a class="nav__ul__link" href="#!">Отзывы</a>
+          </li>
+          
+          <li>
+            <a class="nav__ul__link" href="#!">Партнеры</a>
+          </li>
+          
+          <li>
+            <a class="nav__ul__link" href="#!">Контакты/Часы работы</a>
+          </li>
+          
+          <li>
+            <a class="nav__ul__link" href="#!">Документы и Лицензии</a>
+          </li>
+
+          <li>
+            <a class="nav__ul__link" href="#!">Вопросы и ответы</a>
+          </li>
+
+          <li>
+            <a class="nav__ul__link" href="#!">Цены</a>
+          </li>
+
+          <li>
+            <a class="nav__ul__link" href="#!">Политика конфиденциальности</a>
+          </li>
+
+        </ul>
+
+      </li>
+      
+      <li class="nav__item">
+
+        <h2 class="nav__title">СОБЫТИЯ</h2>
+        
+        <ul class="nav__ul">
+
+          <li>
+            <a class="nav__ul__link" href="#!">Мероприятия</a>
+          </li>
+          
+          <li>
+            <a class="nav__ul__link" href="#!">Новости</a>
+          </li>
+          
+          <li>
+            <a class="nav__ul__link" href="#!">Акции</a>
+          </li>
+        </ul>
+
+      </li>
+
+    </ul>
+    
+    <div class="legal">
+
+      <p>&copy; 2020 MediCare Clinic Group</p>
+      
+      <div class="legal__links nav__ul"> 
+
+        <a class="nav__ul__link" href="#!">
+          <span>Сделано с любовью
+
+            <span class="heart">♥
+            </span>
+             в студии RedFrunze
+
+          </span>
+        </a>
+
+      </div>
+
+    </div>
+
+    </footer>
+    
+    <!-- footer end  -->
+
+
+    <!-- JavaScript: размещается в конце документа, чтобы страницы загружались быстрее -->
+    <script src="{% static 'js/main.js' %}"></script>
+    <!-- Библиотека jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <!-- Popper.js для всплывающих подсказок -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <!-- Последний скомпилированный и минимизированный Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+    </script>
+    
+</body>
+</html>

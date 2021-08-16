@@ -15,13 +15,13 @@
 
 
     <!-- header start-->  
-  <!--
+
     <header class="header">
     
     <div class="wrapper">
       <div class="header-logo">
         <a href="/" class="header-logo__link">
-          <img src="/dj001/blog/static/img/svg/logo_main.svg" alt="Клиника MediCare" class="header-logo__link-pic">
+          <img src="{% static '/img/svg/logo_main.svg' %}" alt="Клиника MediCare" class="header-logo__link-pic">
         </a>
       </div>
       
@@ -30,19 +30,19 @@
           <ul class="header-wrapper__info-list">
             <li class="header-wrapper__info-item">
               <a href="#!" class="header-wrapper__info-link">
-                <img src="/dj001/img/svg/logo_adress.svg" alt="Комендантский пр-кт, д.58, к1, стр.1" class="header-wrapper__info-item-pic">
+                <img src="{% static '/img/svg/logo_adress.svg' %}" alt="Комендантский пр-кт, д.58, к1, стр.1" class="header-wrapper__info-item-pic">
               </a> 
               <a href="#!" class="header-wrapper__info-link">Комендантский пр-кт, д.58, к1, стр.1</a>
             </li>
             <li class="header-wrapper__info-item">
               <a href="#!" class="header-wrapper__info-link">
-                <img src="/dj001/img/svg/logo_work_hour.svg" alt="Пн-Вс 09:00-20:00" class="header-wrapper__info-item-pic">
+                <img src="{% static '/img/svg/logo_work_hour.svg' %}" alt="Пн-Вс 09:00-20:00" class="header-wrapper__info-item-pic">
               </a>
               <a href="#!" class="header-wrapper__info-link">Пн-Вс 09:00-20:00</a>
             </li>
             <li class="header-wrapper__info-item">
               <a href="#!" class="header-wrapper__info-link">
-                <img src="/dj001/img/svg/logo_tel.svg" alt="+78129945800" class="header-wrapper__info-item-pic">
+                <img src="{% static '/img/svg/logo_tel.svg' %}" alt="+78129945800" class="header-wrapper__info-item-pic">
               </a>
               <a href="#!" class="header-wrapper__info-link">+7 812 994 58 00</a>
             </li>             
@@ -53,22 +53,22 @@
           <ul class="header-wrapper__info-list">
             <li class="header-wrapper__info-item">
               <a href="#!" class="header-wrapper__info-link">
-                <img src="/dj001/img/svg/logo_wa.svg" alt="WhatsApp MediCare Clinic" class="header-wrapper__info-item-pic">
+                <img src="{% static '/img/svg/logo_wa.svg' %}" alt="WhatsApp MediCare Clinic" class="header-wrapper__info-item-pic">
               </a>
             </li>
             <li class="header-wrapper__info-item">
               <a href="#!" class="header-wrapper__info-link">
-                <img src="/dj001/img/svg/logo_inst.svg" alt="Instagram MediCare Clinic" class="header-wrapper__info-item-pic">
+                <img src="{% static '/img/svg/logo_inst.svg' %}" alt="Instagram MediCare Clinic" class="header-wrapper__info-item-pic">
               </a>
             </li>
             <li class="header-wrapper__info-item">
               <a href="#!" class="header-wrapper__info-link">
-                <img src="/dj001/img/svg/logo_vk.svg" alt="VKontakte MediCare Clinic" class="header-wrapper__info-item-pic">
+                <img src="{% static '/img/svg/logo_vk.svg' %}" alt="VKontakte MediCare Clinic" class="header-wrapper__info-item-pic">
               </a>
             </li>
             <li class="header-wrapper__info-item">
               <a href="#!" class="header-wrapper__info-link">
-                <img src="/dj001/img/svg/logo_tm.svg" alt="Telegram MediCare Clinic" class="header-wrapper__info-item-pic">
+                <img src="{% static '/img/svg/logo_tm.svg' %}" alt="Telegram MediCare Clinic" class="header-wrapper__info-item-pic">
               </a>
             </li>
           </ul>
@@ -79,12 +79,12 @@
           <ul class="header-wrapper__info-list">
             <li class="header-wrapper__info-item">
               <a href="#!" class="header-wrapper__info-link">
-                <img src="/dj001/img/svg/user 1.svg" alt="User Account" class="header-wrapper__info-item-pic">
+                <img src="{% static '/img/svg/user 1.svg' %}" alt="User Account" class="header-wrapper__info-item-pic">
               </a>
             </li>
             <li class="header-wrapper__info-item">
               <a href="#!" class="header-wrapper__info-link">
-                <img src="/dj001/img/svg/search.svg" alt="Search on website" class="header-wrapper__info-item-pic">
+                <img src="{% static '/img/svg/search.svg' %}" alt="Search on website" class="header-wrapper__info-item-pic">
               </a>
             </li>
           </ul>
@@ -181,7 +181,6 @@
       </div>
     </div>
     </header>
-  -->
     
 
     <!-- header end-->
@@ -225,7 +224,7 @@
     <div class="footer__addr">
 
       <div class="footer_logo">
-        <img src="./img/svg/logo_mainw.png" alt="MediCare Clinic logo_adress" class="footer_logo-pic">
+        <img src="{% static '/img/svg/logo_mainw.png' %}" alt="MediCare Clinic logo_adress" class="footer_logo-pic">
       </div>
       
       <ul class="footer__addr__text">
@@ -372,13 +371,13 @@
     <!-- JavaScript: размещается в конце документа, чтобы страницы загружались быстрее -->
     <script src="{% static 'js/main.js' %}"></script>
     <!-- Библиотека jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    <script src="{% static 'https://code.jquery.com/jquery-3.6.0.min.js' %}" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
     </script>
     <!-- Popper.js для всплывающих подсказок -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    <script src="{% static 'https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js' %}" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
     </script>
     <!-- Последний скомпилированный и минимизированный Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+    <script src="{% static 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js' %}" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
     </script>
     
 </body>

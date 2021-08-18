@@ -526,7 +526,6 @@ img {
     align-items: flex-start ;
     justify-content: space-between;
     padding-top: 5px;
-    margin-top: 20px;
     margin-bottom: auto;
 }
 
@@ -626,9 +625,8 @@ pallete
     font-weight: 300;
     font-size: 60px;
     line-height: 55px;
-    color: rgb(37, 197, 104);
+    color: #ffff;
     margin-bottom: 22px;
-    
 }
 
 .maintext-block__subtitle {

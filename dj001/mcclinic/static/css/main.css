@@ -456,7 +456,7 @@ img {
     position: fixed;    
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     transition: .2s linear;
     padding-bottom: 10px;
     z-index: 999;
@@ -526,6 +526,7 @@ img {
     align-items: flex-start ;
     justify-content: space-between;
     padding-top: 5px;
+    margin-top: 25px;
     margin-bottom: auto;
 }
 
@@ -843,7 +844,7 @@ pallete
 }
 
 .articles_card-more {
-    width: 120px;
+    width: 135px;
     padding: 4px 8px;
     background: #61b3e9;
     text-decoration: none;

@@ -9,9 +9,6 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-#вывод модуля для работы с пагинацией (постраничный вывод новостей)
-from django.http import HttpResponse
-from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
 def main_page(request):
@@ -65,23 +62,6 @@ urlpatterns = [
 ]
  
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-
-#вывод модуля для работы с пагинацией (постраничный вывод новостей)
- 
-def home(request):
-    postList = Post.objects.filter(visible='1')
-    paginator = Paginator(postList, 4)
-    page = request.GET.get('page')
-    querysetGoods = paginator.get_page(page)
- 
-    context = {
-        "postLists": postLists,
-        "title": "Главная страница блога",
-        "desc": "Описание для главной страницы",
-        "key": "ключевые, слова",
-    }
-    return render(request, "main/post_lists.html", context)
 
 
 

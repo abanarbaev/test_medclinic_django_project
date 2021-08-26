@@ -18,7 +18,7 @@
   <!-- header start-->  
 
   <header class="header">
-    
+      
     <div class="wrapper">
       <div class="header-logo">
         <a href="/" class="header-logo__link">
@@ -187,354 +187,38 @@
 
   <!-- header end-->
 
-  <!-- main start-->
+    <!-- main start-->
 
-  <main class="main">
+    <main class="main">
 
-    <!-- maintext start-->
     
-    <div class="maintext">
-      <div class="wrapper-full">
-
-        <div class="maintext-block">
-          <div class="maintext-block__info">
-            <h1 class="maintext-block__title">
-              Клиника MediCare
+        <section class="wrapper maintext">
+          <div class="page-header">
+            {% if user.is_authenticated %}
+            <a href="{% url 'post_new' %}" class="top-menu">
+              <span class="glyphicon glyphicon-plus">
+                Создать
+              </span>
+            </a>
+            {% endif %}
+            <h1>
+              <a href="/">
+                Статьи
+              </a>
             </h1>
-            <p class="maintext-block__subtitle">
-              Полный спектр медицинских услуг терапевта, травматолога, ортопеда, гинеколога, уролога.<br>
-              Все виды анализов и лабораторных исследований.<br>
-              Врачи могут приехать к вам на дом или провести онлайн - консультацию.<br>
-              Мы гарантируем вам высокое качество медицинских услуг по доступным ценам.<br>
-            </p>
-          </div>          
-
-          <div class="maintext-block__pic">
-            <img src="{% static '/img/intro-pic/medpic14.jpg' %}" alt="Клиника MediCare" class="maintext-block__thumb">
           </div>
-
-        </div>
-
-      </div>
-    </div>
-    
-    <!-- maintext end -->
-
-    <!-- places start -->
-    
-    <section class="places wrapper">
-      <div class="places-cards">
-          
-        <figure class="places-cards__card places-cards__card_size_lg">
-          <img src="{% static '/img/intro-pic/medpic14.jpg' %}" alt="Терапия" class="places-cards__card-pic places-cards__card-pic_size_lg">
-          <figcaption class="places-cards__card-title">
-            Терапия
-          </figcaption>
-          <a href="#!" class="places-cards__card-link"></a>
-        </figure>
-
-        <figure class="places-cards__card places-cards__card_size_lg">
-          <img src="{% static '/img/intro-pic/medpic60.jpg' %}" alt="Травматология" class="places-cards__card-pic places-cards__card-pic_size_lg">
-          <figcaption class="places-cards__card-title">
-            Травматология
-          </figcaption>
-          <a href="#!" class="places-cards__card-link"></a>
-        </figure>
-
-        <figure class="places-cards__card places-cards__card_size_sm">
-          <img src="{% static '/img/intro-pic/medpic69.jpg' %}" alt="Урология" class="places-cards__card-pic places-cards__card-pic_size_sm">
-          <figcaption class="places-cards__card-title">
-            Урология
-          </figcaption>
-          <a href="#!" class="places-cards__card-link"></a>
-        </figure>
-
-        <figure class="places-cards__card places-cards__card_size_sm">
-          <img src="{% static '/img/intro-pic/medpic66.jpg' %}" alt="Гинекология" class="places-cards__card-pic places-cards__card-pic_size_sm">
-          <figcaption class="places-cards__card-title">
-            Гинекология
-          </figcaption>
-          <a href="#!" class="places-cards__card-link"></a>
-        </figure>
-
-        <figure class="places-cards__card places-cards__card_size_sm">
-          <img src="{% static '/img/intro-pic/medpic21.jpg' %}" alt="Анализы" class="places-cards__card-pic places-cards__card-pic_size_sm">
-          <figcaption class="places-cards__card-title">
-            Анализы
-          </figcaption>
-          <a href="#!" class="places-cards__card-link"></a>
-        </figure>
-        
-      </div>
-
-    </section>
-    
-    <!-- places end -->
-
-    <!-- ARTICLES start-->
-    
-    <section class="articles">
-      <div class="wrapper-full">
-
-        <h2 class="articles-title">
-          <a href="#!">СТАТЬИ</a>
-        </h2>
-
-        <div class="articles_cards">
-          
-          <div class="articles_card">            
-            <div class="articles_card-pic">
-              
-              <img src="{% static '/img/blog/Allergen.jpg' %}" alt="Комплекс Аллергены" class="articles_card-thumb">
-              
-              <div class="articles_card-stats">
-
-                <h3 class="articles_card-title">
-                  Комплекс Аллергены
-                </h3>
-                
-                <div class="articles_card-likes">
-                  <span class="articles_card-likes-value">
-                    221
-                  </span>
-                </div>
-                
-                <div class="articles_card-comments">
-                  <span class="articles_card-comments-value">
-                    50
-                  </span>
-                </div>
-
+          <div class="content container">
+            <div class="row">
+              <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
               </div>
-
             </div>
-            <p class="articles_card-desc">
-              Что входит в комплекс
-              Тимофеевка луговая IgE (G6, ImmunoCAP)
-              Амброзия высокая IgE (W1, ImmunoCAP)
-              Полынь IgE (W6, ImmunoCAP)
-            </p>
-            <a href="#!" class="articles_card-more">
-              Подробнее
-            </a>
           </div>
-
-          <div class="articles_card">            
-            <div class="articles_card-pic">
-              
-              <img src="{% static '/img/blog/prp-therapy.jpg' %}" alt="PRP-терапия" class="articles_card-thumb">
-              
-              <div class="articles_card-stats">
-                                
-                <h3 class="articles_card-title">
-                  PRP-терапия
-                </h3>
-                
-                <div class="articles_card-likes">
-                  <span class="articles_card-likes-value">
-                    430
-                  </span>
-                </div>
-                
-                <div class="articles_card-comments">
-                  <span class="articles_card-comments-value">
-                    84
-                  </span>
-                </div>
-
-              </div>
-
-            </div>
-            <p class="articles_card-desc">
-              По данным Всемирной организации здравоохранения, 
-              за последние 10 лет изменилась структура заболеваемости
-              в сторону хронических заболеваний.
-            </p>
-            <a href="#!" class="articles_card-more">
-              Подробнее
-            </a>
-          </div>
-
-          <div class="articles_card">            
-            <div class="articles_card-pic">
-              
-              <img src="{% static '/img/blog/pregnant.jpg' %}" alt="Ведение беременности" class="articles_card-thumb">
-              
-              <div class="articles_card-stats">
-                                
-                <h3 class="articles_card-title">
-                  Ведение беременности
-                </h3>
-                
-                <div class="articles_card-likes">
-                  <span class="articles_card-likes-value">
-                    286
-                  </span>
-                </div>
-                
-                <div class="articles_card-comments">
-                  <span class="articles_card-comments-value">
-                    74
-                  </span>
-                </div>
-
-              </div>
-
-            </div>
-            <p class="articles_card-desc">
-              Будущим мамам необходимо 
-              следить за своим здоровьем 
-              и периодически наблюдаться у врача.
-            </p>
-            <a href="#!" class="articles_card-more">
-              Подробнее
-            </a>
-          </div>
-
-          <div class="articles_card">            
-            <div class="articles_card-pic">
-              
-              <img src="{% static '/img/blog/heel_spur.jpg' %}" alt="Пяточная шпора" class="articles_card-thumb">
-              
-              <div class="articles_card-stats">
-
-                <h3 class="articles_card-title">
-                  Пяточная шпора
-                </h3>
-                
-                <div class="articles_card-likes">
-                  <span class="articles_card-likes-value">
-                    221
-                  </span>
-                </div>
-                
-                <div class="articles_card-comments">
-                  <span class="articles_card-comments-value">
-                    50
-                  </span>
-                </div>
-
-              </div>
-
-            </div>
-            <p class="articles_card-desc">
-              Пяточная шпора или плантарный фасциит 
-              ─ это заболевание, которое развивается
-              вследствие микротравматизации подошвенной связки. 
-            </p>
-            <a href="#!" class="articles_card-more">
-              Подробнее
-            </a>
-          </div>
-
-          <div class="articles_card">            
-            <div class="articles_card-pic">
-              
-              <img src="{% static '/img/blog/testosterone.jpg' %}" alt="Тестостерон" class="articles_card-thumb">
-              
-              <div class="articles_card-stats">
-                                
-                <h3 class="articles_card-title">
-                  Тестостерон
-                </h3>
-                
-                <div class="articles_card-likes">
-                  <span class="articles_card-likes-value">
-                    430
-                  </span>
-                </div>
-                
-                <div class="articles_card-comments">
-                  <span class="articles_card-comments-value">
-                    84
-                  </span>
-                </div>
-
-              </div>
-
-            </div>
-            <p class="articles_card-desc">
-              Тестостерон - это важный андрогенный гормон, 
-              который вырабатывается в яичках мужчин.
-            </p>
-            <a href="#!" class="articles_card-more">
-              Подробнее
-            </a>
-          </div>
-
-          <div class="articles_card">            
-            <div class="articles_card-pic">
-              
-              <img src="{% static '/img/blog/pregnant.jpg' %}" alt="Травмпункт" class="articles_card-thumb">
-              
-              <div class="articles_card-stats">
-                                
-                <h3 class="articles_card-title">
-                  Травмпункт
-                </h3>
-                
-                <div class="articles_card-likes">
-                  <span class="articles_card-likes-value">
-                    286
-                  </span>
-                </div>
-                
-                <div class="articles_card-comments">
-                  <span class="articles_card-comments-value">
-                    74
-                  </span>
-                </div>
-
-              </div>
-
-            </div>
-            <p class="articles_card-desc">
-              В настоящее время отмечается резкое 
-              возрастание частоты повреждений тканей 
-              и органов опорно-двигательного аппарата.
-            </p>
-            <a href="#!" class="articles_card-more">
-              Подробнее
-            </a>
-          </div>
-
-        </div>
-
-      </div>
-    </section>    
+        </section>    
     
-    <!-- ARTICLES end-->
+    </main>
 
-
-
-    <!--Customers Carousel Likes start-->
-
-    
-    
-    <!--Customer Carousel Likes end-->
-
-
-
-    <!-- videos start-->
-
-
-    <div class="videos">
-      <div class="videos_wrapper">
-
-        <div class="video_item">
-      
-        <iframe class="video_element" src="https://www.youtube.com/embed/04gii3YmKyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-      </div>
-
-      </div>
-    </div>
-
-    <!-- videos end-->
-
-
-
-  </main>
 
   <!-- footer start  -->
 
@@ -709,6 +393,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
     </script>
-
+    
 </body>
 </html>

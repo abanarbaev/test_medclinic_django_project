@@ -1,12 +1,10 @@
 {% extends 'main/base.html' %}
 
-
-
-{% block content %}
+{% load static %}
 
 <!-- ARTICLES start-->
-{% load static %}  
 
+{% block content %}
     
     <div class="post wrapper-full">
 
@@ -61,14 +59,16 @@
           <a href="#!" class="articles_card-more">
             Подробнее
           </a>
+
         </div>
         {% endfor %}
+      </div>
 
 
 
     </div>
 
  
-  {% endblock %}
+{% endblock %}
   
-  <!-- ARTICLES end-->
+<!-- ARTICLES end-->

@@ -1,522 +1,165 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Клиника MediCare</title>    
-    
-    <!-- Bootstrap--> <!-- Последний скомпилированный и минимизированный Bootstrap CSS 4.6.0 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    {% load static %}
-    <!-- Custom styles -->
-    <!-- <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> -->
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
-</head>
-<body>
+{% extends 'main/base.html' %}
 
-  <!-- header start-->  
+{% load static %}  
 
-  <header class="header">
+<!-- maintext start-->
+
+{% block blog %}
     
-    <div class="wrapper">
-      <div class="header-logo">
-        <a href="/" class="header-logo__link">
-          <img src="{% static '/img/svg/logo_main.svg' %}" alt="Клиника MediCare" class="header-logo__link-pic">
-        </a>
+  <div class="maintext">
+    <div class="wrapper-full">
+      <div class="maintext-block">
+        <div class="maintext-block__info">
+          <h1 class="maintext-block__title">
+            Клиника MediCare
+          </h1>
+          <p class="maintext-block__subtitle">
+            Полный спектр медицинских услуг терапевта, травматолога, ортопеда, гинеколога, уролога.<br>
+            Все виды анализов и лабораторных исследований.<br>
+            Врачи могут приехать к вам на дом или провести онлайн - консультацию.<br>
+            Мы гарантируем вам высокое качество медицинских услуг по доступным ценам.<br>
+          </p>
+        </div>          
+
+        <div class="maintext-block__pic">
+          <img src="{% static '/img/intro-pic/medpic14.jpg' %}" alt="Клиника MediCare" class="maintext-block__thumb">
+        </div>
+
       </div>
-      
-      <div class="header-wrapper">
-        <div class="header-wrapper__info">
-          <ul class="header-wrapper__info-list">
-            <li class="header-wrapper__info-item">
-              <a href="#!" class="header-wrapper__info-link">
-                <img src="{% static '/img/svg/logo_adress.svg' %}" alt="Комендантский пр-кт, д.58, к1, стр.1" class="header-wrapper__info-item-pic">
-              </a> 
-              <a href="#!" class="header-wrapper__info-link">Комендантский пр-кт, д.58, к1, стр.1</a>
-            </li>
-            <li class="header-wrapper__info-item">
-              <a href="#!" class="header-wrapper__info-link">
-                <img src="{% static '/img/svg/logo_work_hour.svg' %}" alt="Пн-Вс 09:00-20:00" class="header-wrapper__info-item-pic">
-              </a>
-              <a href="#!" class="header-wrapper__info-link">Пн-Вс 09:00-20:00</a>
-            </li>
-            <li class="header-wrapper__info-item">
-              <a href="#!" class="header-wrapper__info-link">
-                <img src="{% static '/img/svg/logo_tel.svg' %}" alt="+78129945800" class="header-wrapper__info-item-pic">
-              </a>
-              <a href="#!" class="header-wrapper__info-link">+7 812 994 58 00</a>
-            </li>             
-          </ul>
-        </div>
 
-        <div class="header-wrapper__info">
-          <ul class="header-wrapper__info-list">
-            <li class="header-wrapper__info-item">
-              <a href="#!" class="header-wrapper__info-link">
-                <img src="{% static '/img/svg/logo_wa.svg' %}" alt="WhatsApp MediCare Clinic" class="header-wrapper__info-item-pic">
-              </a>
-            </li>
-            <li class="header-wrapper__info-item">
-              <a href="#!" class="header-wrapper__info-link">
-                <img src="{% static '/img/svg/logo_inst.svg' %}" alt="Instagram MediCare Clinic" class="header-wrapper__info-item-pic">
-              </a>
-            </li>
-            <li class="header-wrapper__info-item">
-              <a href="#!" class="header-wrapper__info-link">
-                <img src="{% static '/img/svg/logo_vk.svg' %}" alt="VKontakte MediCare Clinic" class="header-wrapper__info-item-pic">
-              </a>
-            </li>
-            <li class="header-wrapper__info-item">
-              <a href="#!" class="header-wrapper__info-link">
-                <img src="{% static '/img/svg/logo_tm.svg' %}" alt="Telegram MediCare Clinic" class="header-wrapper__info-item-pic">
-              </a>
-            </li>
-          </ul>
-        </div>
+    </div>
+  </div>
+    
+  <!-- maintext end -->
 
+  <!-- places start -->
+    
+  <section class="places wrapper">
+    <div class="places-cards">
+      <figure class="places-cards__card places-cards__card_size_lg">
+        <img src="{% static '/img/intro-pic/medpic14.jpg' %}" alt="Терапия" class="places-cards__card-pic places-cards__card-pic_size_lg">
+        <figcaption class="places-cards__card-title">
+          Терапия
+        </figcaption>
+        <a href="#!" class="places-cards__card-link"></a>
+      </figure>
 
-        <div class="header-wrapper__info">
-          <ul class="header-wrapper__info-list">
-            <li class="header-wrapper__info-item">
-              <a href="#!" class="header-wrapper__info-link">
-                <img src="{% static '/img/svg/user 1.svg' %}" alt="User Account" class="header-wrapper__info-item-pic">
-              </a>
-            </li>
-            <li class="header-wrapper__info-item">
-              <a href="#!" class="header-wrapper__info-link">
-                <img src="{% static '/img/svg/search.svg' %}" alt="Search on website" class="header-wrapper__info-item-pic">
-              </a>
-            </li>
-          </ul>
-        </div>
+      <figure class="places-cards__card places-cards__card_size_lg">
+        <img src="{% static '/img/intro-pic/medpic60.jpg' %}" alt="Травматология" class="places-cards__card-pic places-cards__card-pic_size_lg">
+        <figcaption class="places-cards__card-title">
+          Травматология
+        </figcaption>
+        <a href="#!" class="places-cards__card-link"></a>
+      </figure>
 
-        <nav class="header-nav">
-          <ul class="header-nav-menu">
+      <figure class="places-cards__card places-cards__card_size_sm">
+        <img src="{% static '/img/intro-pic/medpic69.jpg' %}" alt="Урология" class="places-cards__card-pic places-cards__card-pic_size_sm">
+        <figcaption class="places-cards__card-title">
+          Урология
+        </figcaption>
+        <a href="#!" class="places-cards__card-link"></a>
+      </figure>
 
-            <div class="header-nav-menu_subnav">
-              <li class="header-nav-menu_subnav-item">                
-                <a class="header-nav-menu_subnav-link" data-toggle="dropdown" id="Preview" href="#!" 
-                role="button" aria-haspopup="true" aria-expanded="false">КЛИНИКА MEDICARE</a>
-                <div class="dropdown-menu" aria-labelledby="Просмотр">
-                  <a class="dropdown-item" href="#!">Услуги и Анализы</a>
-                  <a class="dropdown-item" href="#!">Программы</a>
-                  <a class="dropdown-item" href="#!">Акции</a>
-                  <a class="dropdown-item" href="#!">Врач на дом</a>
-                  <a class="dropdown-item" href="#!">Травмпункт</a>
-                  <a class="dropdown-item" href="#!">Онлайн-консультации</a>
-                  <a class="dropdown-item" href="#!">Вакансии</a>
-                </div>
-              </li>
-            </div>
+      <figure class="places-cards__card places-cards__card_size_sm">
+        <img src="{% static '/img/intro-pic/medpic66.jpg' %}" alt="Гинекология" class="places-cards__card-pic places-cards__card-pic_size_sm">
+        <figcaption class="places-cards__card-title">
+          Гинекология
+        </figcaption>
+        <a href="#!" class="places-cards__card-link"></a>
+      </figure>
 
-            <div class="header-nav-menu_subnav">
-              <li class="header-nav-menu_subnav-item">                
-                <a class="header-nav-menu_subnav-link" data-toggle="dropdown" id="Preview" href="#!" 
-                role="button" aria-haspopup="true" aria-expanded="false">О НАС</a>
-                <div class="dropdown-menu" aria-labelledby="Просмотр">
-                  <a class="dropdown-item" href="#!">Врачи</a>
-                  <a class="dropdown-item" href="#!">Нашим клиентам</a>
-                  <a class="dropdown-item" href="#!">Отзывы</a>
-                  <a class="dropdown-item" href="#!">Партнеры</a>
-                  <div class="dropdown-divider"></div>
-                  <h6 class="dropdown-header">Контакты</h6>
-                  <a class="dropdown-item" href="#!">Адрес</a>
-                  <a class="dropdown-item" href="#!">Часы работы</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#!">Документы и Лицензии</a>
-                  <a class="dropdown-item" href="#!">Вопросы и ответы</a>
-                  <a class="dropdown-item" href="#!">Цены</a>
-                  <a class="dropdown-item" href="#!">Политика конфиденциальности</a>
-                </div>
-              </li>
-            </div>
+      <figure class="places-cards__card places-cards__card_size_sm">
+        <img src="{% static '/img/intro-pic/medpic21.jpg' %}" alt="Анализы" class="places-cards__card-pic places-cards__card-pic_size_sm">
+        <figcaption class="places-cards__card-title">
+          Анализы
+        </figcaption>
+        <a href="#!" class="places-cards__card-link"></a>
+      </figure>
+        
+    </div>
 
-            <div class="header-nav-menu_subnav">
-              <li class="header-nav-menu_subnav-item">                
-                <a class="header-nav-menu_subnav-link" data-toggle="dropdown" id="Preview" href="#!" 
-                role="button" aria-haspopup="true" aria-expanded="false">СОБЫТИЯ</a>
-                <div class="dropdown-menu" aria-labelledby="Просмотр">
-                  <a class="dropdown-item" href="#!">Мероприятия</a>
-                  <a class="dropdown-item" href="#!">Новости</a>
-                  <a class="dropdown-item" href="#!">Акции</a>
-                  <!-- 
-                  <a class="dropdown-item" href="#">Партнеры</a>
-                  <a class="dropdown-item" href="#">Контакты/Часы работы</a>
-                  <a class="dropdown-item" href="#">Документы и Лицензии</a>
-                  <a class="dropdown-item" href="#">Вопросы и ответы</a>
-                  <a class="dropdown-item" href="#">Цены</a>
-                  <a class="dropdown-item" href="#">Политика конфиденциальности</a>
-                  -->
-                </div>
-              </li>
-            </div>
+  </section>
+    
+  <!-- places end -->
 
+  <!-- ARTICLES start-->
+    
+  <section class="wrapper maintext">
 
-            <div class="header-nav-menu_subnav">
-              <li class="header-nav-menu_subnav-item">          
+    <div class="post wrapper-full">
+
+      <h2 class="articles-title">
+        <a href="#!">СТАТЬИ</a>
+      </h2>
+
+      <div class="articles_cards">
+
+        {% for post in posts %}
+          <div class="articles_card">
+
+            <div class="articles_card-pic">
+
+              <img src="{% static '/img/blog/Allergen.jpg' %}" alt="{{ post.title }}" class="articles_card-thumb">
+              
+              <div class="articles_card-stats">
+
+                <h3 class="articles_card-title">
+                  <a class="articles_card-title" 
+                  href="{% url 'post_detail' pk=post.pk %}">
+                    {{ post.title|truncatechars:30 }}
+                  </a>
+                </h3>
+                
+  
+                <div class="date">
                   
-                <a class="header-nav-menu_subnav-link" data-toggle="dropdown" id="Preview" href="{% url 'post_list' %}"
-                role="button" aria-haspopup="true" aria-expanded="false">СТАТЬИ</a>
-                <div class="dropdown-menu" aria-labelledby="Просмотр">
-                  <a class="dropdown-item" href="{% url 'post_list' %}">Публикации</a>
-                  <!-- 
-                  <a class="dropdown-item" href="#">Врачи</a>
-                  <a class="dropdown-item" href="#">Нашим клиентам</a>
-                  <a class="dropdown-item" href="#">Отзывы</a>
-                  <a class="dropdown-item" href="#">Партнеры</a>
-                  <a class="dropdown-item" href="#">Контакты/Часы работы</a>
-                  <a class="dropdown-item" href="#">Документы и Лицензии</a>
-                  <a class="dropdown-item" href="#">Вопросы и ответы</a>
-                  <a class="dropdown-item" href="#">Цены</a>
-                  <a class="dropdown-item" href="#">Политика конфиденциальности</a>
-                  -->
+                  {{ post.published_date }}
+  
                 </div>
-              </li>
+                
+                <div class="articles_card-likes">
+                  <span class="articles_card-likes-value">
+                    221
+                  </span>
+                </div>
+                
+                <div class="articles_card-comments">
+                  <span class="articles_card-comments-value">
+                    50
+                  </span>
+                </div>
+  
+              </div>
             </div>
+  
+            <p class="articles_card-desc">
+              {{ post.text|linebreaksbr|truncatechars:200 }}
+            </p>
+            
+            <a href="#!" class="articles_card-more">
+              Подробнее
+            </a>
+  
+          </div>
+        {% endfor %}
+          
+      </div>
+  
+  
+  
+    </div>
 
-          </ul>
-        </nav>
-        
-        
+          
       
+      
+  </section>
 
-      </div>
-    </div>
-  </header>
+  <!-- ARTICLES end-->
 
-  <!-- header end-->
+  <!--Customers Carousel Likes start--> 
+  <!--Customer Carousel Likes end-->
 
-  <!-- main start-->
-
-  <main class="main">
-
-    <!-- maintext start-->
-    
-    <div class="maintext">
-      <div class="wrapper-full">
-
-        <div class="maintext-block">
-          <div class="maintext-block__info">
-            <h1 class="maintext-block__title">
-              Клиника MediCare
-            </h1>
-            <p class="maintext-block__subtitle">
-              Полный спектр медицинских услуг терапевта, травматолога, ортопеда, гинеколога, уролога.<br>
-              Все виды анализов и лабораторных исследований.<br>
-              Врачи могут приехать к вам на дом или провести онлайн - консультацию.<br>
-              Мы гарантируем вам высокое качество медицинских услуг по доступным ценам.<br>
-            </p>
-          </div>          
-
-          <div class="maintext-block__pic">
-            <img src="{% static '/img/intro-pic/medpic14.jpg' %}" alt="Клиника MediCare" class="maintext-block__thumb">
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-    
-    <!-- maintext end -->
-
-    <!-- places start -->
-    
-    <section class="places wrapper">
-      <div class="places-cards">
-          
-        <figure class="places-cards__card places-cards__card_size_lg">
-          <img src="{% static '/img/intro-pic/medpic14.jpg' %}" alt="Терапия" class="places-cards__card-pic places-cards__card-pic_size_lg">
-          <figcaption class="places-cards__card-title">
-            Терапия
-          </figcaption>
-          <a href="#!" class="places-cards__card-link"></a>
-        </figure>
-
-        <figure class="places-cards__card places-cards__card_size_lg">
-          <img src="{% static '/img/intro-pic/medpic60.jpg' %}" alt="Травматология" class="places-cards__card-pic places-cards__card-pic_size_lg">
-          <figcaption class="places-cards__card-title">
-            Травматология
-          </figcaption>
-          <a href="#!" class="places-cards__card-link"></a>
-        </figure>
-
-        <figure class="places-cards__card places-cards__card_size_sm">
-          <img src="{% static '/img/intro-pic/medpic69.jpg' %}" alt="Урология" class="places-cards__card-pic places-cards__card-pic_size_sm">
-          <figcaption class="places-cards__card-title">
-            Урология
-          </figcaption>
-          <a href="#!" class="places-cards__card-link"></a>
-        </figure>
-
-        <figure class="places-cards__card places-cards__card_size_sm">
-          <img src="{% static '/img/intro-pic/medpic66.jpg' %}" alt="Гинекология" class="places-cards__card-pic places-cards__card-pic_size_sm">
-          <figcaption class="places-cards__card-title">
-            Гинекология
-          </figcaption>
-          <a href="#!" class="places-cards__card-link"></a>
-        </figure>
-
-        <figure class="places-cards__card places-cards__card_size_sm">
-          <img src="{% static '/img/intro-pic/medpic21.jpg' %}" alt="Анализы" class="places-cards__card-pic places-cards__card-pic_size_sm">
-          <figcaption class="places-cards__card-title">
-            Анализы
-          </figcaption>
-          <a href="#!" class="places-cards__card-link"></a>
-        </figure>
-        
-      </div>
-
-    </section>
-    
-    <!-- places end -->
-
-    <!-- ARTICLES start-->
-    
-    <section class="articles">
-      <div class="wrapper-full">
-
-        <h2 class="articles-title">
-          <a href="#!">СТАТЬИ</a>
-        </h2>
-
-        <div class="articles_cards">
-          
-          <div class="articles_card">            
-            <div class="articles_card-pic">
-              
-              <img src="{% static '/img/blog/Allergen.jpg' %}" alt="Комплекс Аллергены" class="articles_card-thumb">
-              
-              <div class="articles_card-stats">
-
-                <h3 class="articles_card-title">
-                  Комплекс Аллергены
-                </h3>
-                
-                <div class="articles_card-likes">
-                  <span class="articles_card-likes-value">
-                    221
-                  </span>
-                </div>
-                
-                <div class="articles_card-comments">
-                  <span class="articles_card-comments-value">
-                    50
-                  </span>
-                </div>
-
-              </div>
-
-            </div>
-            <p class="articles_card-desc">
-              Что входит в комплекс
-              Тимофеевка луговая IgE (G6, ImmunoCAP)
-              Амброзия высокая IgE (W1, ImmunoCAP)
-              Полынь IgE (W6, ImmunoCAP)
-            </p>
-            <a href="#!" class="articles_card-more">
-              Подробнее
-            </a>
-          </div>
-
-          <div class="articles_card">            
-            <div class="articles_card-pic">
-              
-              <img src="{% static '/img/blog/prp-therapy.jpg' %}" alt="PRP-терапия" class="articles_card-thumb">
-              
-              <div class="articles_card-stats">
-                                
-                <h3 class="articles_card-title">
-                  PRP-терапия
-                </h3>
-                
-                <div class="articles_card-likes">
-                  <span class="articles_card-likes-value">
-                    430
-                  </span>
-                </div>
-                
-                <div class="articles_card-comments">
-                  <span class="articles_card-comments-value">
-                    84
-                  </span>
-                </div>
-
-              </div>
-
-            </div>
-            <p class="articles_card-desc">
-              По данным Всемирной организации здравоохранения, 
-              за последние 10 лет изменилась структура заболеваемости
-              в сторону хронических заболеваний.
-            </p>
-            <a href="#!" class="articles_card-more">
-              Подробнее
-            </a>
-          </div>
-
-          <div class="articles_card">            
-            <div class="articles_card-pic">
-              
-              <img src="{% static '/img/blog/pregnant.jpg' %}" alt="Ведение беременности" class="articles_card-thumb">
-              
-              <div class="articles_card-stats">
-                                
-                <h3 class="articles_card-title">
-                  Ведение беременности
-                </h3>
-                
-                <div class="articles_card-likes">
-                  <span class="articles_card-likes-value">
-                    286
-                  </span>
-                </div>
-                
-                <div class="articles_card-comments">
-                  <span class="articles_card-comments-value">
-                    74
-                  </span>
-                </div>
-
-              </div>
-
-            </div>
-            <p class="articles_card-desc">
-              Будущим мамам необходимо 
-              следить за своим здоровьем 
-              и периодически наблюдаться у врача.
-            </p>
-            <a href="#!" class="articles_card-more">
-              Подробнее
-            </a>
-          </div>
-
-          <div class="articles_card">            
-            <div class="articles_card-pic">
-              
-              <img src="{% static '/img/blog/heel_spur.jpg' %}" alt="Пяточная шпора" class="articles_card-thumb">
-              
-              <div class="articles_card-stats">
-
-                <h3 class="articles_card-title">
-                  Пяточная шпора
-                </h3>
-                
-                <div class="articles_card-likes">
-                  <span class="articles_card-likes-value">
-                    221
-                  </span>
-                </div>
-                
-                <div class="articles_card-comments">
-                  <span class="articles_card-comments-value">
-                    50
-                  </span>
-                </div>
-
-              </div>
-
-            </div>
-            <p class="articles_card-desc">
-              Пяточная шпора или плантарный фасциит 
-              ─ это заболевание, которое развивается
-              вследствие микротравматизации подошвенной связки. 
-            </p>
-            <a href="#!" class="articles_card-more">
-              Подробнее
-            </a>
-          </div>
-
-          <div class="articles_card">            
-            <div class="articles_card-pic">
-              
-              <img src="{% static '/img/blog/testosterone.jpg' %}" alt="Тестостерон" class="articles_card-thumb">
-              
-              <div class="articles_card-stats">
-                                
-                <h3 class="articles_card-title">
-                  Тестостерон
-                </h3>
-                
-                <div class="articles_card-likes">
-                  <span class="articles_card-likes-value">
-                    430
-                  </span>
-                </div>
-                
-                <div class="articles_card-comments">
-                  <span class="articles_card-comments-value">
-                    84
-                  </span>
-                </div>
-
-              </div>
-
-            </div>
-            <p class="articles_card-desc">
-              Тестостерон - это важный андрогенный гормон, 
-              который вырабатывается в яичках мужчин.
-            </p>
-            <a href="#!" class="articles_card-more">
-              Подробнее
-            </a>
-          </div>
-
-          <div class="articles_card">            
-            <div class="articles_card-pic">
-              
-              <img src="{% static '/img/blog/pregnant.jpg' %}" alt="Травмпункт" class="articles_card-thumb">
-              
-              <div class="articles_card-stats">
-                                
-                <h3 class="articles_card-title">
-                  Травмпункт
-                </h3>
-                
-                <div class="articles_card-likes">
-                  <span class="articles_card-likes-value">
-                    286
-                  </span>
-                </div>
-                
-                <div class="articles_card-comments">
-                  <span class="articles_card-comments-value">
-                    74
-                  </span>
-                </div>
-
-              </div>
-
-            </div>
-            <p class="articles_card-desc">
-              В настоящее время отмечается резкое 
-              возрастание частоты повреждений тканей 
-              и органов опорно-двигательного аппарата.
-            </p>
-            <a href="#!" class="articles_card-more">
-              Подробнее
-            </a>
-          </div>
-
-        </div>
-
-      </div>
-    </section>    
-    
-    <!-- ARTICLES end-->
-
-
-
-    <!--Customers Carousel Likes start-->
-
-    
-    
-    <!--Customer Carousel Likes end-->
-
-
-
-    <!-- videos start-->
-
+  <!-- videos start-->
 
     <div class="videos">
       <div class="videos_wrapper">
@@ -534,181 +177,4 @@
 
 
 
-  </main>
-
-  <!-- footer start  -->
-
-  <footer class="footer wrapper-full">
-    
-    <div class="footer__addr">
-
-      <div class="footer_logo">
-        <img src="{% static '/img/svg/logo_mainw.png' %}" alt="MediCare Clinic logo_adress" class="footer_logo-pic">
-      </div>
-      
-      <ul class="footer__addr__text">
-        +7 (812) 994-58-00
-        <br>
-        Пн-Вс 09:00 – 20:00
-        <br>
-        197373, Россия, г. Санкт-Петербург, Комендантский пр., д. 58, корп.1, стр.1
-        <br>
-      </ul>
-
-    </div>
-    
-    <ul class="footer__nav">
-
-      <li class="nav__item">
-
-        <h2 class="nav__title">MC CLINIC</h2>
-  
-        <ul class="nav__ul">
-
-          <li>
-            <a class="nav__ul__link" href="#!">Услуги и Анализы</a>
-          </li>
-  
-          <li>
-            <a class="nav__ul__link" href="#!">Программы</a>
-          </li>
-              
-          <li>
-            <a class="nav__ul__link" href="#!">Врач на дом</a>
-          </li>
-
-          <li>
-            <a class="nav__ul__link" href="#!">Травмпункт</a>
-          </li>
-
-          <li>
-            <a class="nav__ul__link" href="#!">Онлайн-консультации</a>
-          </li>
-
-          <li>
-            <a class="nav__ul__link" href="#!">Вакансии</a>
-          </li>
-
-        </ul>
-
-      </li>
-      
-      <li class="nav__item nav__item--extra">
-
-        <h2 class="nav__title">О НАС</h2>
-        
-        <ul class="nav__ul nav__ul--extra">
-
-          <li>
-            <a class="nav__ul__link" href="#!">Врачи</a>
-          </li>
-          
-          <li>
-            <a class="nav__ul__link" href="#!">Нашим клиентам</a>
-          </li>
-          
-          <li>
-            <a class="nav__ul__link" href="#!">Отзывы</a>
-          </li>
-          
-          <li>
-            <a class="nav__ul__link" href="#!">Партнеры</a>
-          </li>
-          
-          <li>
-            <a class="nav__ul__link" href="#!">Контакты/Часы работы</a>
-          </li>
-          
-          <li>
-            <a class="nav__ul__link" href="#!">Документы и Лицензии</a>
-          </li>
-
-          <li>
-            <a class="nav__ul__link" href="#!">Вопросы и ответы</a>
-          </li>
-
-          <li>
-            <a class="nav__ul__link" href="#!">Цены</a>
-          </li>
-
-          <li>
-            <a class="nav__ul__link" href="#!">Политика конфиденциальности</a>
-          </li>
-
-        </ul>
-
-      </li>
-      
-      <li class="nav__item">
-
-        <h2 class="nav__title">СОБЫТИЯ</h2>
-        
-        <ul class="nav__ul">
-
-          <li>
-            <a class="nav__ul__link" href="#!">Мероприятия</a>
-          </li>
-          
-          <li>
-            <a class="nav__ul__link" href="#!">Новости</a>
-          </li>
-          
-          <li>
-            <a class="nav__ul__link" href="#!">Акции</a>
-          </li>
-        </ul>
-
-      </li>
-
-    </ul>
-    
-    <div class="legal">
-
-      <p>&copy; 2020 MediCare Clinic Group</p>
-      
-      <div class="legal__links nav__ul"> 
-
-        <a class="nav__ul__link" href="#!">
-          <span>Сделано с любовью
-
-            <span class="heart">♥
-            </span>
-             в студии RedFrunze
-
-          </span>
-        </a>
-
-      </div>
-
-    </div>
-
-  </footer>
-
-
-
-
-
-
-    <!-- footer end  -->
-
-    <!-- JavaScript: размещается в конце документа, чтобы страницы загружались быстрее -->
-
-    <script src="{% static 'js/main.js' %}"></script>
-
-    <!-- Библиотека jQuery -->
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
-    </script>
-
-    <!-- Popper.js для всплывающих подсказок -->
-
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
-
-    <!-- Последний скомпилированный и минимизированный Bootstrap JavaScript -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
-    </script>
-
-</body>
-</html>
+{% endblock %}

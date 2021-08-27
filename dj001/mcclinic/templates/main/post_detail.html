@@ -7,7 +7,7 @@
         {% if user.is_authenticated %}
         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
 
-            <span class="glyphicon glyphicon-pencil articles_card-more">
+            <span class="glyphicon glyphicon-pencil post-block__edit">
                 Редактировать
             </span>
 
@@ -16,18 +16,24 @@
 
         {% if post.published_date %}
 
-            <div class="date articles_card-title">
-                {{ post.published_date }}
-            </div>
+        <h3 class="date">
+            
+            <a>
+            {{ post.published_date }}
+            </a>
+
+        </h3>
             
         {% endif %}
 
         <h1 class="post-block__title">
             {{ post.title }}
         </h1>
+
         <p class="post-block__subtitle">
             {{ post.text|linebreaksbr }}
         </p>
+
     </div>
 
 {% endblock %}

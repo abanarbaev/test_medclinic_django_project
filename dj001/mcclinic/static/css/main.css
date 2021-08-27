@@ -763,7 +763,7 @@ pallete
 .articles-title::after {
     display: block;
     content: '';
-    width: 210px;
+    width: 235px;
     height: 3px;
     background-color: #ffff;
     position: absolute;
@@ -818,6 +818,12 @@ pallete
     margin: 0 auto 0 0 ;
 }
 
+.articles_card-title:hover, .articles_card-title:focus, .articles_card-title:active{
+    color: #8eebad ;
+    text-decoration: none;
+}
+
+
 .articles_card-likes{
     font-weight: 400;
     font-size: 16px;
@@ -871,7 +877,7 @@ pallete
 /* Customers Carousel Likes end */
 
 
-/* Blog Likes start */
+/* Blog Post start */
 
 
 .post {
@@ -885,9 +891,8 @@ pallete
     font-size: 60px;
     line-height: 55px;
     color: #ffff;
-    padding-top: 20px;
-    padding: 20px 20px;
-    margin: 22px 22px;
+    padding: 20px 5px;
+    margin: 5px 5px;
 }
 
 .post-block__subtitle {
@@ -895,9 +900,8 @@ pallete
     font-size: 30px;
     line-height: 30px;
     color:#ffff;
-    padding-top: 20px;
-    padding: 20px 20px;
-    margin: 22px 22px;
+    padding: 30px 5px;
+    margin: 5px 5px;
 }
 
 .post-block__pic {
@@ -917,18 +921,29 @@ pallete
     font-size: 18px;
     line-height: 24px;
     color: #ffff;
-    margin: 0 auto 0 0 ;
+    margin: 0 0 0 auto ;
+    padding: 5px 5px;
+    margin: 5px 5px;
 }
 
-/*
-.articles_card-more:hover, .articles_card-more:focus, .articles_card-more:active{
+.post-block__edit {
+    width: 135px;
+    padding: 4px 8px;
+    background: #61b3e9;
+    text-decoration: none;
+    color: #ffff;
+    font-size: 20px;
+    margin: auto 0 0 0 ;
+}
+
+.post-block__edit:hover, .post-block__edit:focus, .post-block__edit:active{
     background: #3f7ed1;
     color: #8eebad ;
     text-decoration: none;
 }
-*/
 
-/* Blog Likes end */
+
+/* Blog Post end */
 
 
 /* videos start */

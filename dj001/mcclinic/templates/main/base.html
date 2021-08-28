@@ -115,7 +115,7 @@
                 <a class="header-nav-menu_subnav-link" data-toggle="dropdown" id="Preview" href="#!" 
                 role="button" aria-haspopup="true" aria-expanded="false">О НАС</a>
                 <div class="dropdown-menu" aria-labelledby="Просмотр">
-                  <a class="dropdown-item" href="#!">Врачи</a>
+                  <a class="dropdown-item" href="{% url 'doctors' %}">Врачи</a>
                   <a class="dropdown-item" href="#!">Нашим клиентам</a>
                   <a class="dropdown-item" href="#!">Отзывы</a>
                   <a class="dropdown-item" href="#!">Партнеры</a>
@@ -192,33 +192,18 @@
     <main class="main">
 
       {% block blog %}
-      
-
-    
-        <section class="wrapper maintext">
+        
+        <section class="wrapper maintext-blog">
           
           <div class="page-header">
-            
-            {% if user.is_authenticated %}
-            
-            <a  class="btn btn-default"  href="{% url 'post_new' %}">
-
-              <span class="glyphicon glyphicon-plus post-block__edit">
-                Создать
-              </span>
-
-            </a>
-            
-            {% endif %}
-          
 
             {% block content %}
             {% endblock %}
-          
+
           </div>
           
-        </section>   
-      
+        </section>
+
       {% endblock %} 
     
     </main>

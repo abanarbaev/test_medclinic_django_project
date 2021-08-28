@@ -1,24 +1,27 @@
 {% extends 'main/base.html' %}
 
-
 {% block content %}
 
-    <h1>
+<div class="post-blog">
+    
+    <h1 class="post-block__title">
         Новая публикация
     </h1>
 
-    <form method="POST" class="post-form">
+    <form method="POST" class="post-form post-block__subtitle">
 
         {% csrf_token %}
         {{ form.as_p }}
 
-        <button type="submit" class="save btn btn-default articles_card-more">
+        <button type="submit" class="save btn btn-default post-block__edit">
 
             Сохранить
 
         </button>
         
     </form>
+
+</div>    
 
 {% endblock %}
 

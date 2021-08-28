@@ -10,18 +10,36 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 #Paginator
-from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
-from django.template import RequestContext
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
 def main_page(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'main/main_page.html', {'posts': posts})
-
+    object_list = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    paginator = Paginator(object_list, 3)  # 3 поста на каждой странице  
+    page = request.GET.get('page')  
+    try:  
+        posts = paginator.page(page)  
+    except PageNotAnInteger:  
+        # Если страница не является целым числом, поставим первую страницу  
+        posts = paginator.page(1)  
+    except EmptyPage:  
+        # Если страница больше максимальной, доставить последнюю страницу результатов  
+        posts = paginator.page(paginator.num_pages)  
+    return render(request, 'main/main_page.html', {'page': page,'posts': posts})
 
 def post_list(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'main/post_list.html', {'posts': posts})
+    object_list = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    paginator = Paginator(object_list, 3)  # 3 поста на каждой странице  
+    page = request.GET.get('page')  
+    try:  
+        posts = paginator.page(page)  
+    except PageNotAnInteger:  
+        # Если страница не является целым числом, поставим первую страницу  
+        posts = paginator.page(1)  
+    except EmptyPage:  
+        # Если страница больше максимальной, доставить последнюю страницу результатов  
+        posts = paginator.page(paginator.num_pages)  
+    return render(request, 'main/post_list.html', {'page': page,'posts': posts})    
 
 
 def post_detail(request, pk):
@@ -68,22 +86,12 @@ urlpatterns = [
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
-#Paginator
+#doctors
 
-def news(request):
-    '''Show all news'''
-    posts_list = Post.objects.all().order_by('-timestamp')
-    paginator = Paginator(posts_list, 8)
-    page = request.GET.get('page')
-    try:
-        posts = paginator.page(page)
-    except PageNotAnInteger:
-        posts = paginator.page(1)
-    except EmptyPage:
-        posts = paginator.page(paginator.num_pages)
-    vars = dict(
-        posts=posts,
-        )
-    return render('news.html', vars, context_instance=RequestContext(request))
+
+def doctors(request):
+    return render(request, 'main/doctors.html', {})
+
+
 
 

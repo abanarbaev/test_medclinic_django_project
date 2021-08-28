@@ -636,7 +636,7 @@ pallete
     font-size: 30px;
     line-height: 30px;
     color:#ffff;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
 }
 
 .maintext-block__pic {
@@ -662,9 +662,9 @@ pallete
     min-height: 100vh;
     background: url() no-repeat center;
     background-size: cover;
-    padding-top: 25px;
-    padding-bottom: 50px;
-    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .places-cards {
@@ -879,6 +879,17 @@ pallete
 
 /* Blog Post start */
 
+.maintext-blog {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.post-blog {
+    padding-top: 100px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
 
 .post {
     padding-top: 5px;
@@ -921,19 +932,28 @@ pallete
     font-size: 18px;
     line-height: 24px;
     color: #ffff;
-    margin: 0 0 0 auto ;
     padding: 5px 5px;
     margin: 5px 5px;
 }
 
+.btn_edit {
+    padding: 10px 5px !important;
+    margin: 0 !important;
+}
+
+.btn_create {
+    padding: 10px 0px !important;
+    margin: 0 !important;
+}
+
 .post-block__edit {
     width: 135px;
-    padding: 4px 8px;
     background: #61b3e9;
     text-decoration: none;
     color: #ffff;
     font-size: 20px;
-    margin: auto 0 0 0 ;
+    padding: 5px 5px;
+    margin: 5px 5px;
 }
 
 .post-block__edit:hover, .post-block__edit:focus, .post-block__edit:active{
@@ -942,6 +962,13 @@ pallete
     text-decoration: none;
 }
 
+
+
+.pagination {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 5px;
+}
 
 /* Blog Post end */
 
@@ -1080,3 +1107,146 @@ pallete
 
 
 /* footer end */
+
+/* Doctors start */
+
+.doctors_list {
+    padding-top: 100px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.doctors_list__title {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 55px;
+    position: relative;
+    color: #ffff;
+    padding: 20px 5px;
+    margin: 5px 5px;
+}
+
+.doctors_list__title::after {
+    display: block;
+    content: '';
+    width: 245px;
+    height: 3px;
+    background-color: #ffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.doctors_list__title a {
+    color:#ffff
+}
+
+
+.doctors_list__title a:hover, .doctors_list__title a:focus, .doctors_list__title a:active {
+    color: #8eebad ;
+    text-decoration: none;
+}
+
+
+.doctors_list__subtitle {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    color:#ffff;
+    padding: 30px 5px;
+    margin: 5px 5px;
+}
+
+
+.doctors_list_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.doctors_list_card {
+    display: flex;
+    flex-direction: column;
+}
+
+.doctors_list_card-pic {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.doctors_list__pic {
+    margin: 0 0 auto 0;
+    margin-top: 5px;
+    padding-left: 50px;
+}
+
+.doctors_list__pic::after {
+    margin: 0 0 auto 0;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.doctors_list_card-stats {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(21, 24, 36, 0.3);
+    padding: 10px 10px;
+}
+
+.doctors_list_card-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffff;
+    margin: 0 auto 0 0 ;
+}
+
+.doctors_list_card-title:hover, .doctors_list_card-title:focus, .doctors_list_card-title:active {
+    color: #8eebad ;
+    text-decoration: none;
+}
+
+.doctors_list_card__date {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffff;
+    padding: 5px 5px;
+    margin: 5px 5px;
+}
+
+.doctors_list_card-desc {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffff;
+    margin-bottom: 31px;
+}
+
+.doctors_list_card-desc:hover, .doctors_list_card-desc:focus, .doctors_list_card-desc:active {
+    color: #8eebad ;
+    text-decoration: none;
+}
+
+.doctors_list_card-more {
+    width: 135px;
+    padding: 4px 8px;
+    background: #61b3e9;
+    text-decoration: none;
+    color: #ffff;
+    font-size: 20px;
+    margin: auto 0 0 0 ;
+}
+
+.doctors_list_card-more:hover, .doctors_list_card-more:focus, .doctors_list_card-more:active {
+    color: #8eebad ;
+    text-decoration: none;
+}
+
+/* Doctors end */

@@ -1,0 +1,270 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+<div class="doctors_list wrapper-full">
+
+  <h2 class="doctors_list__title">
+    <a href="#!">Врачи</a>
+  </h2>
+
+  <div class="doctors_list_cards">
+<!-- --------------------------------------------------------------- -->
+    <div class="doctors_list_card">
+
+      <div class="doctors_list_card-pic">        
+        <img src="{% static '/img/blog/Allergen.jpg' %}"   class="rounded-circle"
+        style="width: 150px;"
+        alt="">
+
+        <div class="doctors_list_card-stats">
+
+          <h3 class="doctors_list_card-title">
+            <a class="doctors_list_card-title" 
+            href="#!">
+              Анарбаев Алишер Бакирович
+            </a>
+          </h3>          
+
+          <div class="doctors_list_card__date">            
+            Алишер
+          </div>    
+
+        </div>
+
+      </div>
+
+      <a class="doctors_list_card-desc" href="#!">
+        Главный врач
+        Врач Травматолог-ортопед
+        Врач общей практики
+        Терапевт
+        Стаж 8 лет
+      </a>
+      
+      <a href="#!" class="doctors_list_card-more">
+        Подробнее
+      </a>
+
+    </div>
+
+<!-- --------------------------------------------------------------- -->
+    <div class="doctors_list_card">
+
+      <div class="doctors_list_card-pic">        
+        <img src="{% static '/img/blog/Allergen.jpg' %}" alt="{{ post.title }}" class="doctors-list_card-thumb">
+
+        <div class="doctors_list_card-stats">
+
+          <h3 class="doctors_list_card-title">
+            <a class="doctors_list_card-title" 
+            href="#!">
+              Анарбаев Алишер Бакирович
+            </a>
+          </h3>          
+
+          <div class="doctors_list_card__date">            
+            Алишер
+          </div>    
+
+        </div>
+
+      </div>
+
+      <a class="doctors_list_card-desc" href="#!">
+        Главный врач
+        Врач Травматолог-ортопед
+        Врач общей практики
+        Терапевт
+        Стаж 8 лет
+      </a>
+      
+      <a href="#!" class="doctors_list_card-more">
+        Подробнее
+      </a>
+
+    </div>
+
+
+<!-- --------------------------------------------------------------- -->
+
+    <div class="doctors-list_card">
+
+      <div class="doctors-list_card-pic">        
+        <img src="{% static '/img/blog/Allergen.jpg' %}" alt="{{ post.title }}" class="doctors-list_card-thumb">
+        <div class="doctors-list_card-stats">
+
+          <h3 class="doctors-list_card-title">
+            <a class="doctors-list_card-title" 
+            href="#!">
+              ЖУРАВСКИЙ ДМИТРИЙ АЛЕКСАНДРОВИЧ
+            </a>
+          </h3>          
+
+          <div class="doctors-list_card__date">            
+            {{ post.published_date }}
+          </div>    
+
+        </div>
+
+      </div>
+
+      <p class="doctors-list_card-desc">
+        Врач уролог - андролог
+        Стаж 6 лет
+      </p>
+      
+      <a href="#!" class="doctors-list_card-more">
+        Подробнее
+      </a>
+
+    </div>
+
+<!-- --------------------------------------------------------------- -->
+
+    <div class="doctors-list_card">
+
+      <div class="doctors-list_card-pic">        
+        <img src="{% static '/img/blog/Allergen.jpg' %}" alt="{{ post.title }}" class="doctors-list_card-thumb">
+        <div class="doctors-list_card-stats">
+
+          <h3 class="doctors-list_card-title">
+            <a class="doctors-list_card-title" 
+            href="#!">
+              Казимагомедов Казбек Низамиевич
+            </a>
+          </h3>          
+
+          <div class="doctors-list_card__date">            
+            {{ post.published_date }}
+          </div>    
+
+        </div>
+
+      </div>
+
+      <p class="doctors-list_card-desc">
+        Врач  Хирург-онколог
+        Стаж 6 лет
+      </p>
+      
+      <a href="#!" class="doctors-list_card-more">
+        Подробнее
+      </a>
+
+    </div>
+
+<!-- --------------------------------------------------------------- -->
+
+    <div class="doctors-list_card">
+
+      <div class="doctors-list_card-pic">        
+        <img src="{% static '/img/blog/Allergen.jpg' %}" alt="{{ post.title }}" class="doctors-list_card-thumb">
+        <div class="doctors-list_card-stats">
+
+          <h3 class="doctors-list_card-title">
+            <a class="doctors-list_card-title" 
+            href="#!">
+              Беганова Александра Камильевна
+            </a>
+          </h3>          
+
+          <div class="doctors-list_card__date">            
+            {{ post.published_date }}
+          </div>    
+
+        </div>
+
+      </div>
+
+      <p class="doctors-list_card-desc">
+        Врач  акушер-гинеколог
+        Стаж 2 года
+      </p>
+      
+      <a href="#!" class="doctors-list_card-more">
+        Подробнее
+      </a>
+
+    </div>
+
+<!-- --------------------------------------------------------------- -->
+
+    <div class="doctors-list_card">
+
+      <div class="doctors-list_card-pic">        
+        <img src="{% static '/img/blog/Allergen.jpg' %}" alt="{{ post.title }}" class="doctors-list_card-thumb">
+        <div class="doctors-list_card-stats">
+
+          <h3 class="doctors-list_card-title">
+            <a class="doctors-list_card-title" 
+            href="#!">
+              Ходжаева Фарангис Мухаммадиевна
+            </a>
+          </h3>          
+
+          <div class="doctors-list_card__date">            
+            {{ post.published_date }}
+          </div>    
+
+        </div>
+
+      </div>
+
+      <p class="doctors-list_card-desc">
+        Врач  Гинеколог
+        Стаж 6 лет
+      </p>
+      
+      <a href="#!" class="doctors-list_card-more">
+        Подробнее
+      </a>
+
+    </div>
+
+<!-- --------------------------------------------------------------- -->
+
+    <div class="doctors-list_card">
+
+      <div class="doctors-list_card-pic">        
+        <img src="{% static '/img/blog/Allergen.jpg' %}" alt="{{ post.title }}" class="doctors-list_card-thumb">
+        <div class="doctors-list_card-stats">
+
+          <h3 class="doctors-list_card-title">
+            <a class="doctors-list_card-title" 
+            href="#!">
+              Курбанов Ильяс Шуайифович
+            </a>
+          </h3>          
+
+          <div class="doctors-list_card__date">            
+            {{ post.published_date }}
+          </div>    
+
+        </div>
+
+      </div>
+
+      <p class="doctors-list_card-desc">
+        Травматолог-ортопед
+      </p>
+      
+      <a href="#!" class="doctors-list_card-more">
+        Подробнее
+      </a>
+
+    </div>
+
+<!-- --------------------------------------------------------------- -->
+    
+  </div>
+
+
+
+</div>
+
+
+{% endblock %}

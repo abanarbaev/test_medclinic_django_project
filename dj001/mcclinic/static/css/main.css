@@ -1110,6 +1110,10 @@ pallete
 
 /* Doctors start */
 
+.testimonial-card .card-up { height: 120px; overflow: hidden; border-top-left-radius:
+    0.25rem; border-top-right-radius: 0.25rem; } .testimonial-card .avatar { width: 110px;
+    margin-top: -60px; overflow: hidden; border: 3px solid #fff; border-radius: 50%; }
+
 .doctors_list {
     padding-top: 100px;
     padding-bottom: 5px;
@@ -1121,7 +1125,7 @@ pallete
     font-size: 60px;
     line-height: 55px;
     position: relative;
-    color: #ffff;
+    color: rgb(255, 255, 255);
     padding: 20px 5px;
     margin: 5px 5px;
 }
@@ -1131,14 +1135,14 @@ pallete
     content: '';
     width: 245px;
     height: 3px;
-    background-color: #ffff;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     bottom: 0;
     left: 0;
 }
 
 .doctors_list__title a {
-    color:#ffff
+    color:rgb(255, 255, 255)
 }
 
 
@@ -1148,90 +1152,38 @@ pallete
 }
 
 
-.doctors_list__subtitle {
-    font-weight: 300;
-    font-size: 30px;
+.doctors_list__name {
+    font-weight: 400;
+    font-size: 25px;
     line-height: 30px;
-    color:#ffff;
+    color:rgb(0, 0, 0);
     padding: 30px 5px;
     margin: 5px 5px;
 }
 
-
-.doctors_list_cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-}
-
-.doctors_list_card {
-    display: flex;
-    flex-direction: column;
-}
-
-.doctors_list_card-pic {
-    position: relative;
-    margin-bottom: 45px;
-}
-
-.doctors_list__pic {
-    margin: 0 0 auto 0;
-    margin-top: 5px;
-    padding-left: 50px;
-}
-
-.doctors_list__pic::after {
-    margin: 0 0 auto 0;
-    margin-left: 50px;
-    margin-top: 5px;
-}
-
-.doctors_list_card-stats {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(21, 24, 36, 0.3);
-    padding: 10px 10px;
-}
-
-.doctors_list_card-title {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #ffff;
-    margin: 0 auto 0 0 ;
-}
-
-.doctors_list_card-title:hover, .doctors_list_card-title:focus, .doctors_list_card-title:active {
+.doctors_list__name:hover, .doctors_list__name:focus, .doctors_list__name:active {
     color: #8eebad ;
     text-decoration: none;
 }
 
-.doctors_list_card__date {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #ffff;
-    padding: 5px 5px;
+.doctors_list__about {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color:rgb(0, 0, 0);
+    padding: 30px 5px;
     margin: 5px 5px;
 }
 
-.doctors_list_card-desc {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #ffff;
-    margin-bottom: 31px;
-}
-
-.doctors_list_card-desc:hover, .doctors_list_card-desc:focus, .doctors_list_card-desc:active {
+.doctors_list__about:hover, .doctors_list__about:focus, .doctors_list__about:active {
     color: #8eebad ;
     text-decoration: none;
+}
+
+.doctors_list__block {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .doctors_list_card-more {

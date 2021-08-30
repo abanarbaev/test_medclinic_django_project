@@ -92,6 +92,11 @@ urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 def doctors(request):
     return render(request, 'main/doctors.html', {})
 
+#doctor_page
+
+def doctor_page(request):
+    return render(request, 'main/doctor_page.html', {})
+
 
 
 

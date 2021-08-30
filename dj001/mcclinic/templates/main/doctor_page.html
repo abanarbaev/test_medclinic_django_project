@@ -1,0 +1,49 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+<div class="doctors_list wrapper-full">
+
+  <div class="row text-center doctors_list__block">
+    <div class="col-md-4 mb-5 mb-md-0">
+      <div class="card testimonial-card" style="position: relative; width: 1150px;">
+        <div class="card-up" style="background-color: #9d789b;"></div>
+        <div class="avatar mx-auto bg-white">
+          <img
+            src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg"
+            class="rounded-circle img-fluid"
+          />
+        </div>
+        <div class="card-body">
+
+          <h3>
+            <a class="doctors_list__name" href="{% url 'doctor_page' %}">
+              АНАРБАЕВ АЛИШЕР БАКИРОВИЧ
+            </a>
+          </h3>
+
+          <h4>
+            <a class="doctors_list__about text-center" href="#!">
+              ТРАВМАТОЛОГ-ОРТОПЕД<br>
+              ТЕРАПЕВТ<br>
+              СТАЖ 8 ЛЕТ
+            </a>
+          </h4>
+
+        </div>
+      </div>
+    </div>
+  </div>   
+  
+  
+
+
+
+
+</div>
+
+
+{% endblock %}

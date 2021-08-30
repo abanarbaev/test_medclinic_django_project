@@ -12,15 +12,14 @@
   </h2>
 
 
-  <section>
+  <section class="doc__wrapper">
     <div class="row d-flex justify-content-center">
-      <div class="col-md-10 col-xl-8 text-center">
-        <h3 class="mb-4">Профессионалы нашей клиники</h3>
-        <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+      <div class="doctors_list__subtitle">
+        <p>
           Многопрофильная клиника MediCare Clinic находится в Приморском районе Санкт-Петербурга. Мы предоставляем полный спектр медицинских услуг акушера-гинеколога, уролога, терапевта, травматолога, ортопеда, онколога, а также более 2000 анализов и лабораторных исследований.
-          Поэтому мы находимся в постоянном поиске профессионалов своего дела для усиления команды нашей клиники.
-          Вы можете узнать подробности о вакансиях или задать вопрос о клинике на сайте, WhatsApp (+7-931-101-53-72), ВК.
-          Резюме можете прислать на email info@medicareclinic.ru  с пометкой на какую вакансию.
+          Мы находимся в постоянном поиске профессионалов своего дела для усиления команды нашей клиники.
+          
+          
         </p>
       </div>
     </div>
@@ -38,18 +37,16 @@
           <div class="card-body">
 
             <h3>
-              <a class="doctors_list__name" href="#!">
-                Анарбаев Алишер Бакирович
+              <a class="doctors_list__name" href="{% url 'doctor_page' %}">
+                АНАРБАЕВ АЛИШЕР БАКИРОВИЧ
               </a>
             </h3>
 
             <h4>
-              <a class="doctors_list__about" href="#!">
-                Главный врач
-                Врач Травматолог-ортопед
-                Врач общей практики
-                Терапевт
-                Стаж 8 лет
+              <a class="doctors_list__about text-center" href="#!">
+                ТРАВМАТОЛОГ-ОРТОПЕД<br>
+                ТЕРАПЕВТ<br>
+                СТАЖ 8 ЛЕТ
               </a>
             </h4>
 
@@ -75,8 +72,8 @@
 
             <h4>
               <a class="doctors_list__about" href="#!">
-                Врач уролог - андролог
-                Стаж 6 лет
+                УРОЛОГ-АНДРОЛОГ<br>
+                СТАЖ 6 ЛЕТ
               </a>
             </h4>
 
@@ -95,15 +92,16 @@
           <div class="card-body">
 
             <h3>
-              <a class="doctors_list__name" href="#!">
-                Казимагомедов Казбек Низамиевич
+              <a class="doctors_list__name text-center" href="#!">
+                КАЗИМАГОМЕДОВ КАЗБЕК НИЗАМИЕВИЧ
               </a>
             </h3>
 
             <h4>
               <a class="doctors_list__about" href="#!">
-                Врач  Хирург-онколог
-                Стаж 6 лет
+                ОНКОЛОГ<br>
+                ХИРУРГ<br>
+                СТАЖ 6 ЛЕТ
               </a>
             </h4>
 
@@ -126,17 +124,14 @@
 
             <h3>
               <a class="doctors_list__name" href="#!">
-                Анарбаев Алишер Бакирович
+                ХОДЖАЕВА ФАРАНГИС МУХАММАДИЕВНА
               </a>
             </h3>
 
             <h4>
               <a class="doctors_list__about" href="#!">
-                Главный врач
-                Врач Травматолог-ортопед
-                Врач общей практики
-                Терапевт
-                Стаж 8 лет
+                АКУШЕР-ГИНЕКОЛОГ<br>
+                СТАЖ 6 ЛЕТ
               </a>
             </h4>
 
@@ -156,14 +151,14 @@
 
             <h3>
               <a class="doctors_list__name" href="#!">
-                ЖУРАВСКИЙ ДМИТРИЙ АЛЕКСАНДРОВИЧ
+                КУРБАНОВ ИЛЬЯС ШУАЙИФОВИЧ
               </a>
             </h3>
 
             <h4>
               <a class="doctors_list__about" href="#!">
-                Врач уролог - андролог
-                Стаж 6 лет
+                ТРАВМАТОЛОГ-ОРТОПЕД<br>
+                СТАЖ 8 ЛЕТ
               </a>
             </h4>
 
@@ -183,14 +178,15 @@
 
             <h3>
               <a class="doctors_list__name" href="#!">
-                Казимагомедов Казбек Низамиевич
+                Алимурадов Амир Ровшанович
               </a>
             </h3>
 
             <h4>
               <a class="doctors_list__about" href="#!">
-                Врач  Хирург-онколог
-                Стаж 6 лет
+                ХИРУРГ<br>
+                УРОЛОГ<br>
+                СТАЖ 10 ЛЕТ
               </a>
             </h4>
 
@@ -200,80 +196,7 @@
     </div>
   </section>
   
-<!-- --------------------------------------------------------------- -->
-
-
-
-<!-- --------------------------------------------------------------- -->
-
-    <div class="doctors-list_card">
-
-      <div class="doctors-list_card-pic">        
-        <img src="{% static '/img/blog/Allergen.jpg' %}" alt="{{ post.title }}" class="doctors-list_card-thumb">
-        <div class="doctors-list_card-stats">
-
-          <h3 class="doctors-list_card-title">
-            <a class="doctors-list_card-title" 
-            href="#!">
-              Ходжаева Фарангис Мухаммадиевна
-            </a>
-          </h3>          
-
-          <div class="doctors-list_card__date">            
-            {{ post.published_date }}
-          </div>    
-
-        </div>
-
-      </div>
-
-      <p class="doctors-list_card-desc">
-        Врач  Гинеколог
-        Стаж 6 лет
-      </p>
-      
-      <a href="#!" class="doctors-list_card-more">
-        Подробнее
-      </a>
-
-    </div>
-
-<!-- --------------------------------------------------------------- -->
-
-    <div class="doctors-list_card">
-
-      <div class="doctors-list_card-pic">        
-        <img src="{% static '/img/blog/Allergen.jpg' %}" alt="{{ post.title }}" class="doctors-list_card-thumb">
-        <div class="doctors-list_card-stats">
-
-          <h3 class="doctors-list_card-title">
-            <a class="doctors-list_card-title" 
-            href="#!">
-              Курбанов Ильяс Шуайифович
-            </a>
-          </h3>          
-
-          <div class="doctors-list_card__date">            
-            {{ post.published_date }}
-          </div>    
-
-        </div>
-
-      </div>
-
-      <p class="doctors-list_card-desc">
-        Травматолог-ортопед
-      </p>
-      
-      <a href="#!" class="doctors-list_card-more">
-        Подробнее
-      </a>
-
-    </div>
-
-<!-- --------------------------------------------------------------- -->
-    
-  </div>
+  <!-- --------------------------------------------------------------- -->
 
 
 

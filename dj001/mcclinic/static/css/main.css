@@ -964,7 +964,7 @@ pallete
 
 
 
-.pagination {
+.pagination-block {
     padding-top: 20px;
     padding-bottom: 30px;
     margin-bottom: 5px;
@@ -1114,6 +1114,15 @@ pallete
     0.25rem; border-top-right-radius: 0.25rem; } .testimonial-card .avatar { width: 110px;
     margin-top: -60px; overflow: hidden; border: 3px solid #fff; border-radius: 50%; }
 
+.doc__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5px 5px;
+    position: relative;
+}
+
 .doctors_list {
     padding-top: 100px;
     padding-bottom: 5px;
@@ -1126,19 +1135,21 @@ pallete
     line-height: 55px;
     position: relative;
     color: rgb(255, 255, 255);
-    padding: 20px 5px;
-    margin: 5px 5px;
+    padding-bottom: 5px;
+    margin-left: 5px;
 }
 
 .doctors_list__title::after {
     display: block;
     content: '';
-    width: 245px;
+    width: 185px;
     height: 3px;
     background-color: rgb(255, 255, 255);
     position: absolute;
     bottom: 0;
     left: 0;
+    padding-left: 5px;
+    margin-left: 5px;
 }
 
 .doctors_list__title a {
@@ -1151,13 +1162,21 @@ pallete
     text-decoration: none;
 }
 
+.doctors_list__subtitle {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    color:#ffff;
+    padding: 20px 20px;
+}
+
 
 .doctors_list__name {
-    font-weight: 400;
-    font-size: 25px;
+    font-weight: 300;
+    font-size: 20px;
     line-height: 30px;
     color:rgb(0, 0, 0);
-    padding: 30px 5px;
+    padding: 5px 5px;
     margin: 5px 5px;
 }
 
@@ -1168,10 +1187,10 @@ pallete
 
 .doctors_list__about {
     font-weight: 300;
-    font-size: 20px;
+    font-size: 12px;
     line-height: 30px;
     color:rgb(0, 0, 0);
-    padding: 30px 5px;
+    padding: 5px 5px;
     margin: 5px 5px;
 }
 
@@ -1201,4 +1220,15 @@ pallete
     text-decoration: none;
 }
 
+.card {
+    height: 400px;
+}
+
 /* Doctors end */
+
+/* Doctor Page start */
+
+
+
+
+/* Doctor Page end */

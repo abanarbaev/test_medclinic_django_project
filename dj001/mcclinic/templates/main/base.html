@@ -99,13 +99,14 @@
                 <a class="header-nav-menu_subnav-link" data-toggle="dropdown" id="Preview" href="#!" 
                 role="button" aria-haspopup="true" aria-expanded="false">КЛИНИКА MEDICARE</a>
                 <div class="dropdown-menu" aria-labelledby="Просмотр">
-                  <a class="dropdown-item" href="#!">Услуги и Анализы</a>
+                  <a class="dropdown-item" href="{% url 'services' %}">Услуги</a>
+                  <a class="dropdown-item" href="{% url 'analyzes' %}">Анализы</a>
                   <a class="dropdown-item" href="#!">Программы</a>
-                  <a class="dropdown-item" href="#!">Акции</a>
+                  <a class="dropdown-item" href="{% url 'promo' %}">Акции</a>
                   <a class="dropdown-item" href="#!">Врач на дом</a>
                   <a class="dropdown-item" href="#!">Травмпункт</a>
                   <a class="dropdown-item" href="#!">Онлайн-консультации</a>
-                  <a class="dropdown-item" href="#!">Вакансии</a>
+                  <a class="dropdown-item" href="{% url 'job' %}">Вакансии</a>
                 </div>
               </li>
             </div>
@@ -116,15 +117,15 @@
                 role="button" aria-haspopup="true" aria-expanded="false">О НАС</a>
                 <div class="dropdown-menu" aria-labelledby="Просмотр">
                   <a class="dropdown-item" href="{% url 'doctors' %}">Врачи</a>
-                  <a class="dropdown-item" href="#!">Нашим клиентам</a>
                   <a class="dropdown-item" href="#!">Отзывы</a>
                   <a class="dropdown-item" href="#!">Партнеры</a>
+                  <a class="dropdown-item" href="{% url 'insurance' %}">Страховые полисы</a>
                   <div class="dropdown-divider"></div>
                   <h6 class="dropdown-header">Контакты</h6>
-                  <a class="dropdown-item" href="#!">Адрес</a>
-                  <a class="dropdown-item" href="#!">Часы работы</a>
+                  <a class="dropdown-item" href="{% url 'contacts' %}">Адрес</a>
+                  <a class="dropdown-item" href="{% url 'job' %}">Вакансии</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#!">Документы и Лицензии</a>
+                  <a class="dropdown-item" href="{% url 'docsl' %}">Документы и Лицензии</a>
                   <a class="dropdown-item" href="#!">Вопросы и ответы</a>
                   <a class="dropdown-item" href="#!">Цены</a>
                   <a class="dropdown-item" href="#!">Политика конфиденциальности</a>
@@ -139,7 +140,7 @@
                 <div class="dropdown-menu" aria-labelledby="Просмотр">
                   <a class="dropdown-item" href="#!">Мероприятия</a>
                   <a class="dropdown-item" href="#!">Новости</a>
-                  <a class="dropdown-item" href="#!">Акции</a>
+                  <a class="dropdown-item" href="{% url 'promo' %}">Акции</a>
                   <!-- 
                   <a class="dropdown-item" href="#">Партнеры</a>
                   <a class="dropdown-item" href="#">Контакты/Часы работы</a>
@@ -273,11 +274,7 @@
         <ul class="nav__ul nav__ul--extra">
 
           <li>
-            <a class="nav__ul__link" href="#!">Врачи</a>
-          </li>
-          
-          <li>
-            <a class="nav__ul__link" href="#!">Нашим клиентам</a>
+            <a class="nav__ul__link" href="{% url 'doctors' %}">Врачи</a>
           </li>
           
           <li>
@@ -289,11 +286,19 @@
           </li>
           
           <li>
-            <a class="nav__ul__link" href="#!">Контакты/Часы работы</a>
+            <a class="nav__ul__link" href="{% url 'insurance' %}">Страховые полисы</a>
+          </li>
+
+          <li>
+            <a class="nav__ul__link" href="{% url 'contacts' %}">Контакты</a>
+          </li>
+
+          <li>
+            <a class="nav__ul__link" href="{% url 'job' %}">Вакансии</a>
           </li>
           
           <li>
-            <a class="nav__ul__link" href="#!">Документы и Лицензии</a>
+            <a class="nav__ul__link" href="{% url 'docsl' %}">Документы и Лицензии</a>
           </li>
 
           <li>
@@ -327,7 +332,7 @@
           </li>
           
           <li>
-            <a class="nav__ul__link" href="#!">Акции</a>
+            <a class="nav__ul__link" href="{% url 'promo' %}">Акции</a>
           </li>
         </ul>
 

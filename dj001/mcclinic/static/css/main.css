@@ -1138,7 +1138,7 @@ pallete
     padding-bottom: 5px;
     margin-left: 5px;
 }
-
+/*
 .doctors_list__title::after {
     display: block;
     content: '';
@@ -1151,7 +1151,7 @@ pallete
     padding-left: 5px;
     margin-left: 5px;
 }
-
+*/
 .doctors_list__title a {
     color:rgb(255, 255, 255)
 }
@@ -1267,3 +1267,263 @@ pallete
 
 
 /* Doctor Page end */
+
+/* Contacts Page start */
+
+.contacts_list {
+padding-top: 100px;
+padding-bottom: 5px;
+margin-bottom: 5px;
+}
+
+.contacts_list__title {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 25px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+
+.contacts_list__subtitle {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 15px;
+    color:#ffff;
+    padding-bottom: 20px;
+}
+
+/* Contacts Page end */
+
+/* Docsl Page start */
+
+
+.docsl_list {
+    padding-top: 100px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    }
+    
+.docsl_list__title {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+    
+.docsl_list__subtitle {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    color:#ffff;
+    padding-bottom: 20px;
+}
+
+/* Docsl Page end */
+
+
+/* insurance Page start */
+
+
+.insurance_list {
+    padding-top: 100px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.insurance_list__maintitle {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 55px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+    
+.insurance_list__title {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+    
+.insurance_list__subtitle {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    color:#ffff;
+    padding-bottom: 20px;
+}
+
+/* insurance Page end */
+
+
+/* job Page start */
+
+
+.job_list {
+    padding-top: 100px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.job_list__maintitle {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 60px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+    
+.job_list__title {
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 50px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+    
+.job_list__subtitle {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    color:#ffff;
+    padding-bottom: 20px;
+}
+
+/* job Page end */
+
+
+
+/* promo Page start */
+
+
+.promo_list {
+    padding-top: 100px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.promo_list__maintitle {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 60px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+    
+.promo_list__title {
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 50px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+    
+.promo_list__subtitle {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    color:#ffff;
+    padding-bottom: 20px;
+}
+
+
+/* promo Page end */
+
+
+
+/* services Page start */
+
+
+
+.services_list {
+    padding-top: 100px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.services_list__block {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.services_list__maintitle {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 60px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+    
+.services_list__title {
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 50px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+    
+.services_list__subtitle {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    color:#ffff;
+    padding-bottom: 20px;
+}
+
+
+/* services Page end */
+
+
+
+/* Analyzes Page start */
+
+.analyzes_list {
+    padding-top: 100px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.analyzes_list__block {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.analyzes_list__maintitle {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 60px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+    
+.analyzes_list__title {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+    
+.analyzes_list__subtitle {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+    color:#ffff;
+    padding-bottom: 20px;
+}
+
+/* Analyzes Page end */

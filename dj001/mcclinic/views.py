@@ -134,6 +134,7 @@ def analyzes(request):
 
 #analyzes_price
 
+"""
 def analyzes_price(request):
     object_list = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     paginator = Paginator(object_list, 10)  # 10 поста на каждой странице  
@@ -147,7 +148,7 @@ def analyzes_price(request):
         # Если страница больше максимальной, доставить последнюю страницу результатов  
         posts = paginator.page(paginator.num_pages)  
     return render(request, 'main/allclinic.html', {'page': page,'posts': posts})    
-
+"""
 
 
 

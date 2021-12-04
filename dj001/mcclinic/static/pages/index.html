@@ -1,5 +1,3 @@
-{% load static %}
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <!-- (c) RedFrunze Studio | http://www.redfrunze.ru/ -->
@@ -11,27 +9,27 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <title>
-     
+
       MediCare Clinic
-     
+
     </title>
 
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ STATIC_URL }}/images/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="{{ STATIC_URL }}/images/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ STATIC_URL }}/images/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ STATIC_URL }}/images/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/f/src/images/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/f/src/images/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/f/src/images/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/f/src/images/apple-icon-76x76.png" />
 
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ STATIC_URL }}/images/apple-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ STATIC_URL }}/images/apple-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ STATIC_URL }}/images/apple-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ STATIC_URL }}/images/apple-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ STATIC_URL }}/img/apple-icon-180x180.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/f/src/images/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/f/src/images/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/f/src/images/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/f/src/images/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png" />
 
-    <link rel="icon" type="image/png" sizes="192x192" href="{{ STATIC_URL }}/img/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/android-icon-192x192.png" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ STATIC_URL }}/images/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="{{ STATIC_URL }}/images/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ STATIC_URL }}/img/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/f/src/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/f/src/images/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png" />
     
     <meta name="description" content="Клиника рядом с домом &quot;MediCare Clinic&quot;. 
     В состав клиники входят: терапевтическая консультация, консультация травматолога,
@@ -43,27 +41,24 @@
 
     <meta name="section" content="" />
 
-    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" media="all" />
+    <link rel="stylesheet" type="text/css" href="/css/main.css" media="all" />
 
     <link rel="start" href="/" />
 
     <link href="//cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="{% static 'css/main.css' %}" media="all" />
+    <link rel="stylesheet" href="/css/main.css" media="all" />
 
-    <meta property="og:image" content="{% static 'img/mc.jpg' %}" />
-
-    
+    <meta property="og:image" content="/img/mc.jpg" />
 
   </head>
 
   <body id="home_page">
-   
+
     <div class="layout">
 
       <div class="layout__inner">
 
-        
         <div class="header">
 
           <span class="header__bg">
@@ -116,47 +111,67 @@
                   <ul>
 
                     <li>
-                      <a href="{{ STATIC_URL }}travma/">
+                      <a href="/consultation/">
                         Центр травматологии и ортопедии
                       </a>
                     </li>
+
                     <li>
-                      <a href="/home/gynecology/">
+                      <a href="/correction/">
                         Гинекология и акушерство
                       </a>
                     </li>
+
                     <li>
-                      <a href="/home/urology/">
+                      <a href="/preparation/">
                         Урология и андрология
                       </a>
                     </li>
+
                     <li>
-                      <a href="/home/vaccine/">
+                      <a href="/maternity_hospital/">
                         Центр Вакцинации
                       </a>
                     </li>
+
                     <li>
-                      <a href="/home/laboratory/">
+                      <a href="/intensive_treatment_unit/">
                         Анализы и лабораторные исследования
                       </a>
                     </li>
+
                     <li>
-                      <a href="/home/firstaid/">
+                      <a href="/paediatric_centre/">
                         Травмпункт
                       </a>
                     </li>
+
                     <li>
-                      <a href="/home/online/">
+                      <a href="/On_line/">
                         On-line консультации
                       </a>
                     </li>
+
                     <li>
-                      <a href="/home/callhome/">
+                      <a href="/births_on_credit/">
                         Медицинская помощь на дому
                       </a>
                     </li>
+
                     <li>
-                      <a href="/home/vacancies/">
+                      <a href="/english_version/">
+                        English version
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="/chinese_version/">
+                        中文
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="/job_vacancies/">
                         Вакансии
                       </a>
                     </li>
@@ -167,7 +182,7 @@
 
                 <li>
 
-                  <a href="/about">
+                  <a href="/about/about.html">
                     О нас
                   </a>
 
@@ -175,7 +190,7 @@
 
                 <li>
 
-                  <a href="/occasions/">
+                  <a href="/occasions/occasions.html">
                     События
                   </a>
 
@@ -183,7 +198,7 @@
 
                 <li>
 
-                  <a href="/articles/">
+                  <a href="/articles/articles.html">
                     Статьи
                   </a>
 
@@ -220,7 +235,6 @@
           </div>
 
         </div>
-      
 
         <div id="content">
 
@@ -608,7 +622,7 @@
     </div>
 
     <div class="bg">
-      <img alt="" width="300" height="300" src="{% static 'img/main-bg.jpg' %}" />
+      <img alt="" width="300" height="300" src="/img/main-bg.jpg" />
       
     </div>
 
@@ -672,167 +686,170 @@
           <ul class="sitemap">
 
             <li class="selected">
-          
+
               <b class="selected">
                 MediCare Clinic
               </b>
-          
+
               <ul>
-          
+
                 <li>
-                  <a href="/home/travma/">
+                  <a href="/consultation/">
                     Центр травматологии и ортопедии
                   </a>
                 </li>
                 <li>
-                  <a href="/home/gynecology/">
+                  <a href="/correction/">
                     Гинекология и акушерство
                   </a>
                 </li>
                 <li>
-                  <a href="/home/urology/">
+                  <a href="/preparation/">
                     Урология и андрология
                   </a>
                 </li>
                 <li>
-                  <a href="/home/vaccine/">
+                  <a href="/maternity_hospital/">
                     Центр Вакцинации
                   </a>
                 </li>
                 <li>
-                  <a href="/home/laboratory/">
+                  <a href="/intensive_treatment_unit/">
                     Анализы и лабораторные исследования
                   </a>
                 </li>
                 <li>
-                  <a href="/home/firstaid/">
+                  <a href="/paediatric_centre/">
                     Травмпункт
                   </a>
                 </li>
                 <li>
-                  <a href="/home/online/">
+                  <a href="/On_line/">
                     On-line консультации
                   </a>
                 </li>
                 <li>
-                  <a href="/home/callhome/">
+                  <a href="/births_on_credit/">
                     Медицинская помощь на дому
                   </a>
                 </li>
                 <li>
-                  <a href="/home/vacancies/">
+                  <a href="/english_version/">
+                    English version
+                  </a>
+                </li>
+                <li>
+                  <a href="/chinese_version/">
+                    中文
+                  </a>
+                </li>
+                <li>
+                  <a href="/job_vacancies/">
                     Вакансии
                   </a>
                 </li>
-          
+
               </ul>
-          
+
             </li>
-          
+
             <li>
-          
-              <a href="/about">
+
+              <a href="/about/about.html">
                 О нас
               </a>
-          
+
               <ul class="">
-          
-                <li>
-                  <a href="/about/staff/">
-                    Коллектив
-                  </a>
-                </li>
-          
-                <li>
-                  <a href="/about/reviews/">
-                    Отзывы
-                  </a>
-                </li>
-          
-                <li>
-                  <a href="/about/for_clients/">
-                    Нашим клиентам
-                  </a>
-                </li>
-          
-                <li>
-                  <a href="/about/contacts/">
-                    Контакты / Часы работы
-                  </a>
-                </li>
-          
-                <li>
-                  <a href="/about/partners/">
-                    Партнеры
-                  </a>
-                </li>
-          
-                <li>
-                  <a href="/about/pricelist/">
-                    Цены
-                  </a>
-                </li>
-          
+
                 <li>
                   <a href="/about/excursion/">
                     Экскурсия
                   </a>
                 </li>
-          
                 <li>
                   <a href="/about/history/">
                     История
                   </a>
                 </li>
-          
+                <li>
+                  <a href="/about/staff/">
+                    Коллектив
+                  </a>
+                </li>
+                <li>
+                  <a href="/about/for_clients/">
+                    Нашим клиентам
+                  </a>
+                </li>
+                <li>
+                  <a href="/about/reviews/">
+                    Отзывы
+                  </a>
+                </li>
+                <li>
+                  <a href="/about/partners/">
+                    Партнеры
+                  </a>
+                </li>
+                <li>
+                  <a href="/about/contacts/">
+                    Контакты / Часы работы
+                  </a>
+                </li>
                 <li>
                   <a href="/about/faq/">
                     Вопросы и ответы
                   </a>
                 </li>
-          
+                <li>
+                  <a href="/about/pricelist/">
+                    Цены
+                  </a>
+                </li>
+                <li>
+                  <a href="/about/poems/">
+                    Медицинский вестник
+                  </a>
+                </li>
+
               </ul>
-          
+
             </li>
-          
+
             <li>
-          
+
               <a href="/occasions/">
                 События
               </a>
-          
+
               <ul class="">
-          
+
                 <li>
                   <a href="/occasions/events/">
                     Мероприятия
                   </a>
                 </li>
-          
                 <li>
                   <a href="/occasions/news/">
                     Новости
                   </a>
                 </li>
-          
                 <li>
                   <a href="/occasions/promos/">
                     Акции
                   </a>
                 </li>
-          
-              </ul>
-          
-            </li>
-          
-            <li>
 
+              </ul>
+
+            </li>
+
+            <li>
               <a href="/articles/">
                 Статьи
               </a>
-
             </li>
-          
+
           </ul>
 
           <div class="search-results-container">
@@ -845,20 +862,46 @@
 
     </div>
 
-    
-    
+    <div class="popup popup_call not_display">
 
- 
+      <span class="popup__close">
+        ×
+      </span>
 
-    <script src="{% static 'js/common.js' %}">
+      <div class="popup__content">
+
+        <div class="block-centered">
+
+          <div class="block-centered__content">
+
+            <h3>
+              Заказ звонка
+            </h3>
+
+            <div class="callback-content">
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="/js/Hyphenator.js">
 
     </script>
 
-    <script src="{% static 'js/app.bundle.js' %}">
+    <script src="/js/common.js">
 
     </script>
 
-    <script src="{% static 'js/home.bundle.js' %}">
+    <script src="/js/app.bundle.js">
+
+    </script>
+
+    <script src="/js/home.bundle.js">
 
     </script>
 
@@ -947,7 +990,6 @@
 
     </script>
 
-    
   </body>
 
 </html>
